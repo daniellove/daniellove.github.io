@@ -1,0 +1,131 @@
+/* Initial loading */
+
+body {
+	max-width: 1024px;
+	margin: auto;
+	font-family: helvita, san-serif, arial;
+}
+
+body.docLoading {
+	overflow: hidden;
+}
+
+.loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #FFF;
+	z-index: 999;
+}
+
+.loading > div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.loading p {
+	font-size: 30px;
+	font-weight: bold;
+	color: rgba(80, 90, 100, 0.9);
+}
+
+/* navBar */
+
+nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #505A64;
+	font-weight: bold;
+	color: #FFF;
+}
+
+nav .navInner {
+	max-width: 1024px;
+	margin: auto;
+}
+
+nav .logo {
+	float: left;
+	background-image: url("../img/logoThumb.png");
+	background-size: auto 2rem;
+	background-repeat: no-repeat;
+	background-position: 0.5rem 0.5rem;
+	padding: 0.5rem 0 0.5rem 4rem;
+}
+
+nav .logo h1 {
+	font-size: 2.65em;
+	line-height: 0.8em;
+	font-weight: 100;
+	float: left;
+}
+
+nav .logo div {
+	float: left;
+	margin-left: 0.8em;
+	line-height: 1.08em;
+}
+
+nav .navItems {
+	float: right;
+	padding: 1rem 0;
+}
+
+nav .navItem {
+	text-decoration: none;
+	padding: 1rem 0.666rem;
+	margin-right: 0.666rem;
+	cursor: pointer;
+}
+
+.clearDiv {
+	clear: both;
+}
+
+/* mastHead */
+#mastHead {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+#mastHead .logoContainer {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	width: 50%;
+}
+
+#mastHead .logoContainer img {
+	width: 50%;
+	margin-left: 27%;
+}
+
+#mastHead .logoContainer h3,
+#mastHead .logoContainer p {
+	width: 73%;
+	margin-left: 27%;
+}
+
+#mastHead .logoContainer h3 {
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
+#mastHead .logoContainer p {
+	font-size: 1.1em;
+}
