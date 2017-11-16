@@ -2,19 +2,23 @@ function touchDevice() {
 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
 
-	$(function() {
+$(function() {
+	if (touchDevice()) {
+		$('.navItem').addClass('touch')
+	}
 	$('#mobileMenu').on('touchstart', function() {
 		$('#navItems').slideToggle('fast').css('display', 'inline-block')
 	})
-	$('#navItems').on('touchstart', function() {
-		$('#navItems').fadeOut(100)
-	})
+	// if ($(window).width() < 568) {
+		$('#navItems').on('touchstart', function() {
+			$('#navItems').fadeOut(100)
+		})
+	// }
 })
 
 var scrollSpeed = 400
 function winScroll(ele) {
 	var top = $(ele.attr('rel')).offset().top - $('nav').height()
-	console.log(top)
 	$('html, body').animate({scrollTop: top}, scrollSpeed);
 }
 

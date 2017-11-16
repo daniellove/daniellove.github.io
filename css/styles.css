@@ -47,7 +47,7 @@ nav,
 	cursor: pointer;
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 1024px) {
 	#topNav .logo {
 		display: block;
 	}
@@ -76,7 +76,7 @@ nav,
 	padding: 2vh;
 	color: #FFF;
 	font-size: 6vh;
-	display: inline-block;
+	display: block;
 	cursor: pointer;
 }
 
@@ -99,7 +99,7 @@ nav,
 	color: #FFF;
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 1024px) {
 	#topNav #mobileMenu {
 		display: none;
 	}
@@ -115,7 +115,7 @@ nav,
 		margin-top: 0;
 		padding: 3vh 0.5em;
 	}
-	#topNav .navItem:hover {
+	#topNav .navItem:not(.touch):hover {
 		background-color: rgba(0, 0, 0, 0.15);
 	}
 	#topNav .navItem:not(:last-child) {
@@ -174,7 +174,7 @@ nav,
 /* Shared styles (projects/aboutMe) */
 
 #container h3 {
-	font-size: 5em;
+	font-size: 2em;
 	font-weight: bold;
 	line-height: 1.5em;
 	color: #c9793e;
@@ -188,7 +188,7 @@ nav,
 }
 
 #container p {
-	font-size: 2em;
+	font-size: 1em;
 	line-height: 1.3em;
 	color: #8a9097;
 	text-align: justify;
@@ -200,12 +200,6 @@ nav,
 	font-weight: bold;
 	color: #505A64;
 	white-space: nowrap;
-}
-
-@media screen and (min-width: 568px) {
-	#container p {
-		font-size: 1.5em;
-	}
 }
 
 @media screen and (min-width: 1024px) {
