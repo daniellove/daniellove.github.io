@@ -23,6 +23,6 @@ var scrollTop = $(window).scrollTop() ;
 
 $(function() {
 	$('#mobileMenu').on('touchstart', function() {
-		$('#navItems').slideToggle('fast')
+		$('#navItems').slideToggle('fast').css('display', 'inline-block')
 	})
 })
