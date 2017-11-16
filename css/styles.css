@@ -81,11 +81,6 @@ nav #mobileMenu {
 nav #navItems {
 	display: none;
 	margin-left: -4vh;
-	-webkit-transform: translateY(-3px);
-	-moz-transform: translateY(-3px);
-	-ms-transform: translateY(-3px);
-	-o-transform: translateY(-3px);
-	transform: translateY(-3px);
 }
 nav .navItem {
 	font-size: 4vh;
@@ -107,11 +102,6 @@ nav .navItem {
 		display: block;
 		background-color: transparent;
 		margin-left: 0;
-		-webkit-transform: none;
-		-moz-transform: none;
-		-ms-transform: none;
-		-o-transform: none;
-		transform: none;
 	}
 	nav .navItem {
 		display: inline;
