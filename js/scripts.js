@@ -16,3 +16,13 @@
 // 	$(document).find('.loading').remove()
 // 	$('body').removeClass('docLoading')
 // })
+
+
+
+var scrollTop = $(window).scrollTop() ;
+
+$(function() {
+	$('#mobileMenu').on('touchstart', function() {
+		$('#navItems').slideToggle('fast')
+	})
+})

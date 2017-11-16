@@ -3,29 +3,147 @@
 body {
 	max-width: 1024px;
 	margin: auto;
-	font-family: helvita, san-serif, arial;
+	font-family: calibri, san-serif, arial;
+	letter-spacing: 0.05em;
 }
 
-body.docLoading {
-	overflow: hidden;
-}
+/* navBar */
 
-.loading {
-	position: absolute;
+nav {
+	width: 100%;
+	height: 10vh;
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100vh;
-	background-color: #FFF;
 	z-index: 999;
+	font-weight: bold;
+	color: #FFF;
+}
+nav,
+nav .navItem {
+	background-color: #505A64;
 }
 
-.loading > div {
+nav .navInner {
+	max-width: 1024px;
+	margin: auto;
+	padding: 0 10vw;
+}
+
+@media (min-width: 1024px) {
+	nav .navInner {
+		padding: 0 2em;
+	}
+}
+
+nav .logo {
+	float: left;
+	background-image: url("../img/logoThumb.png");
+	background-size: auto 7vh;
+	background-repeat: no-repeat;
+	background-position: 0 1.5vh;
+	padding: 1.5vh 0 1.5vh 2.5em;
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	nav .logo {
+		display: block;
+	}
+}
+
+nav .logo h1 {
+	font-size: 9vh;
+	line-height: 0.75em;
+	font-weight: 100;
+	float: left;
+}
+
+nav .logo div {
+	float: left;
+	margin-left: 0.8em;
+	line-height: 1.3em;
+}
+
+nav .logo p {
+	font-size: 3vh;
+}
+
+nav #mobileMenu {
+	line-height: 6vh;
+	padding: 2vh;
+	color: #FFF;
+	font-size: 6vh;
+	display: inline-block;
+	cursor: pointer;
+}
+
+nav #navItems {
+	display: none;
+}
+nav .navItem {
+	font-size: 4vh;
+	line-height: 10vh;
+	padding: 3vh 0.5em;
+	text-decoration: none;
+	cursor: pointer;
+	display: block;
+	margin-top: -4px;
+	border-top: 1px solid #353e48;
+}
+
+@media (min-width: 1024px) {
+	nav #mobileMenu {
+		display: none;
+	}
+	nav #navItems {
+		float: right;
+		display: block;
+	}
+	nav .navItem {
+		display: inline;
+		border-top: none;
+		margin-top: 0;
+	}
+	nav .navItem:hover {
+		background-color: rgba(0, 0, 0, 0.15);
+	}
+	nav .navItem:not(:last-child) {
+		margin-right: 0.2em;
+	}
+}
+
+.clearDiv {
+	clear: both;
+}
+
+/* mastHead */
+#container {
+	position: relative;
+	width: 100%;
+	padding: 0 10vw;
+}
+
+@media (min-width: 1024px) {
+	#container {
+		padding: 0 2em;
+	}
+}
+
+#mastHead {
+	position: relative;
+	margin: 0 auto;
+	height: 100vh;
+	width: 100%;
+}
+
+#mastHead img {
+	max-width: 100%;
+	max-height: 80vh;
+	width: auto;
+	height: auto;
 	position: absolute;
-	width: 200px;
-	height: 200px;
-	text-align: center;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
@@ -34,98 +152,73 @@ body.docLoading {
 	transform: translate(-50%, -50%);
 }
 
-.loading p {
-	font-size: 30px;
-	font-weight: bold;
-	color: rgba(80, 90, 100, 0.9);
+@media (min-width: 1024px) {
+	#mastHead img {
+		max-width: 80%;
+		max-height: 70vh;
+	}
 }
 
-/* navBar */
+/* End of masthead */
 
-nav {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 999;
-	background-color: #505A64;
-	font-weight: bold;
-	color: #FFF;
+/* About me */
+
+#aboutMe {
+	line-height: 1.5em;
+	margin-bottom: 5em;
 }
 
-nav .navInner {
-	max-width: 1024px;
-	margin: auto;
-}
-
-nav .logo {
-	float: left;
-	background-image: url("../img/logoThumb.png");
-	background-size: auto 2rem;
-	background-repeat: no-repeat;
-	background-position: 0.5rem 0.5rem;
-	padding: 0.5rem 0 0.5rem 4rem;
-}
-
-nav .logo h1 {
-	font-size: 2.65em;
-	line-height: 0.8em;
-	font-weight: 100;
-	float: left;
-}
-
-nav .logo div {
-	float: left;
-	margin-left: 0.8em;
-	line-height: 1.08em;
-}
-
-nav .navItems {
-	float: right;
-	padding: 1rem 0;
-}
-
-nav .navItem {
-	text-decoration: none;
-	padding: 1rem 0.666rem;
-	margin-right: 0.666rem;
-	cursor: pointer;
-}
-
-.clearDiv {
+#aboutMe:after {
+	content: '';
+	display: block;
 	clear: both;
 }
 
-/* mastHead */
-#mastHead {
-	position: relative;
-	height: 100vh;
+#aboutMe .content {
 	width: 100%;
 }
-#mastHead .logoContainer {
-	position: absolute;
-	top: 15%;
-	left: 25%;
-	width: 50%;
+
+#aboutMe > img {
+	width: 40%;
+	margin-left: 30%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
 }
 
-#mastHead .logoContainer img {
-	width: 50%;
-	margin-left: 27%;
+@media (min-width: 1024px) {
+	#aboutMe .content,
+	#aboutMe > img {
+		float: left;
+	}
+
+	#aboutMe .content {
+		width: 66.66%;
+		padding-right: 3em;
+	}
+	#aboutMe > img {
+		width: 33.33%;
+		margin-left: 0;
+	}
 }
 
-#mastHead .logoContainer h3,
-#mastHead .logoContainer p {
-	width: 73%;
-	margin-left: 27%;
-}
-
-#mastHead .logoContainer h3 {
-	font-weight: bold;
-	font-size: 2em;
+#aboutMe h3 {
+	font-size: 3em;
 	line-height: 1.5em;
+	color: #c9793e;
 }
 
-#mastHead .logoContainer p {
-	font-size: 1.1em;
+#aboutMe p {
+	font-size: 1.2em;
+	color: #8a9097;
+	text-align: justify;
+}
+
+#aboutMe b {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #505A64;
+	white-space: nowrap;
 }
