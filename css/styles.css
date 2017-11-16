@@ -104,6 +104,7 @@ nav .navItem {
 		display: inline;
 		border-top: none;
 		margin-top: 0;
+		background-color: transparent;
 	}
 	nav .navItem:hover {
 		background-color: rgba(0, 0, 0, 0.15);
@@ -176,11 +177,12 @@ nav .navItem {
 
 #aboutMe .content {
 	width: 100%;
+	margin-bottom: 2em;
 }
 
 #aboutMe > img {
-	width: 40%;
-	margin-left: 30%;
+	width: 60%;
+	margin-left: 15%;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
@@ -205,7 +207,8 @@ nav .navItem {
 }
 
 #aboutMe h3 {
-	font-size: 3em;
+	font-size: 5em;
+	font-weight: bold;
 	line-height: 1.5em;
 	color: #c9793e;
 }
@@ -221,4 +224,11 @@ nav .navItem {
 	font-weight: bold;
 	color: #505A64;
 	white-space: nowrap;
+}
+
+@media screen and (min-width: 1024px) {
+	#aboutMe h3 {
+		font-size: 3.5em;
+		font-weight: normal;
+	}
 }
