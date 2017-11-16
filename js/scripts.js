@@ -6,6 +6,9 @@ function touchDevice() {
 	$('#mobileMenu').on('touchstart', function() {
 		$('#navItems').slideToggle('fast').css('display', 'inline-block')
 	})
+	$('#navItems').on('touchstart', function() {
+		$('#navItems').fadeOut(100)
+	})
 })
 
 var scrollSpeed = 400
