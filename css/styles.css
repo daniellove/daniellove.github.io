@@ -42,7 +42,7 @@ nav .logo {
 	background-size: auto 7vh;
 	background-repeat: no-repeat;
 	background-position: 0 1.5vh;
-	padding: 1.5vh 0 1.5vh 2.5em;
+	padding: 1.5vh 0 1.5vh 3.2em;
 	display: none;
 }
 
@@ -93,7 +93,11 @@ nav .navItem {
 	border-top: 1px solid #353e48;
 }
 
-@media screen and (min-width: 1024px) {
+nav a.navItem {
+	color: #FFF;
+}
+
+@media screen and (min-width: 568px) {
 	nav #mobileMenu {
 		display: none;
 	}
