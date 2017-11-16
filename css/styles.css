@@ -231,7 +231,8 @@ nav .navItem {
 }
 
 #aboutMe p {
-	font-size: 1.2em;
+	font-size: 1.5em;
+	line-height: 1.3em;
 	color: #8a9097;
 	text-align: justify;
 }
@@ -247,5 +248,8 @@ nav .navItem {
 	#aboutMe h3 {
 		font-size: 3.5em;
 		font-weight: normal;
+	}
+	#aboutMe p {
+		font-size: 1.2em;
 	}
 }
