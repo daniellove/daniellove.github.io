@@ -30,7 +30,7 @@ nav .navInner {
 	padding: 0 10vw;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	nav .navInner {
 		padding: 0 2em;
 	}
@@ -46,7 +46,7 @@ nav .logo {
 	display: none;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	nav .logo {
 		display: block;
 	}
@@ -92,7 +92,7 @@ nav .navItem {
 	border-top: 1px solid #353e48;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	nav #mobileMenu {
 		display: none;
 	}
@@ -124,7 +124,7 @@ nav .navItem {
 	padding: 0 10vw;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	#container {
 		padding: 0 2em;
 	}
@@ -152,7 +152,7 @@ nav .navItem {
 	transform: translate(-50%, -50%);
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	#mastHead img {
 		max-width: 80%;
 		max-height: 70vh;
@@ -188,7 +188,7 @@ nav .navItem {
 	border-radius: 4px;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	#aboutMe .content,
 	#aboutMe > img {
 		float: left;
