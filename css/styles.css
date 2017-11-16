@@ -191,19 +191,27 @@ nav,
 	font-size: 1em;
 	line-height: 1.3em;
 	color: #8a9097;
-	text-align: justify;
+	text-align: left;
 }
 
 #container b,
 #container a {
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 	color: #505A64;
 	white-space: nowrap;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 568px) {
 	#container p {
+		text-align: justify;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#container p,
+	#container b,
+	#container a {
 		font-size: 1.2em;
 	}
 }
