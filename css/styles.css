@@ -231,7 +231,7 @@ nav .navItem {
 }
 
 #aboutMe p {
-	font-size: 1.5em;
+	font-size: 2em;
 	line-height: 1.3em;
 	color: #8a9097;
 	text-align: justify;
@@ -242,6 +242,12 @@ nav .navItem {
 	font-weight: bold;
 	color: #505A64;
 	white-space: nowrap;
+}
+
+@media screen and (min-width: 568px) {
+	#aboutMe p {
+		font-size: 1.5em;
+	}
 }
 
 @media screen and (min-width: 1024px) {
