@@ -291,6 +291,16 @@ nav,
 
 #projects #projectSlider .project .caption p {
 	color: #FFF;
+	text-align: left;
+	font-size: 0.8em;
+	line-height: 1.1em;
+}
+
+@media screen and (min-width: 1024px) {
+	#projects #projectSlider .project .caption p {
+		font-size: 1em;
+		line-height: 1.3em;
+	}
 }
 
 #projects #projectSlider .project.showing .caption {
@@ -300,8 +310,6 @@ nav,
 	-o-transform: translateY(0);
 	transform: translateY(0);
 }
-
-
 
 #projects #window .leftThumb,
 #projects #window .rightThumb {
