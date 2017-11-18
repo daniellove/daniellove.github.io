@@ -291,7 +291,7 @@ nav,
 
 #projects #projectSlider .project .caption p {
 	color: #FFF;
-	text-align: left;
+	text-align: left!important;
 	font-size: 0.8em;
 	line-height: 1.1em;
 }
