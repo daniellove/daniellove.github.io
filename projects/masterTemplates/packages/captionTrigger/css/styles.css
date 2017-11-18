@@ -1,0 +1,41 @@
+.captionTrigger {
+	/* This element is created in the .js */
+	position: relative;
+	cursor: pointer;
+	/* The lines below may affect your position.
+	Remove if needed. */
+	display: -webkit-inline-flex;
+	display: inline-flex;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+
+.img-responsive + .caption {
+	bottom: 20px;
+}
+
+.caption {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+}
+
+.caption[type="dark"] {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption[type="light"] {
+	background-color: rgba(255, 255, 255, 0.85);
+	color: #000;
+}
+
+.caption p {
+	width: initial;
+	margin: 0;
+	padding: 3px 8px;
+	text-align: center;
+}

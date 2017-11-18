@@ -1,0 +1,70 @@
+.hoverInfo {
+	position: relative;
+}
+
+.infoTrigger {
+	background-color: #DDD;
+	border-bottom: 1px dashed #000;
+    text-decoration: none;
+	cursor: pointer;
+}
+
+.hiddenInfo {
+	width: 200px;
+	background-color: #DDD;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+
+.hiddenInfo .padding {
+	padding: 13px;	
+}
+
+.hiddenInfo p {
+	width: 100%;
+	margin: 0;
+	line-height: 25px;
+}
+
+.audioTrigger {
+	border-bottom: 1px dashed #000;
+    text-decoration: none;
+	cursor: pointer;
+}
+
+/*This element is created in the .js*/
+.captionTrigger {
+	position: relative;
+	cursor: pointer;
+	/* The lines below may affect your position.
+	Remove if needed. */
+	display: -webkit-inline-flex;
+	display: inline-flex;
+}
+
+.caption {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+
+.caption[type="light"] {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
+.caption[type="dark"] {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+}
+
+.caption p {
+	width: initial;
+	margin: 0;
+	padding: 3px 8px;
+	text-align: center;
+}

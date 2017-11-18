@@ -1,0 +1,15 @@
+var $colourScheme = {
+	primary_standard: 'rgba(0, 152, 188, 1)',
+	primary_dark: 'rgba(0, 76, 94, 1)',
+	primary_light: 'rgba(127, 184, 210, 1)',
+	primary_lightest: 'rgba(238, 230, 242, 1)',
+	second_standard: 'rgba(219, 108, 35, 1)',
+	second_dark: 'rgba(126, 55, 10, 1)',
+	second_light: 'rgba(244, 127, 67, 1)',
+	second_lightest: 'rgba(251, 238, 229, 1)',
+	dropbox_standard: 'rgba(161, 5, 91, 1)',
+	dropbox_dark: 'rgba(76, 0, 44, 1)',
+	dropbox_light: 'rgba(175, 42, 115, 1)',
+	dropbox_lightest: 'rgba(244, 225, 236, 1)',
+	button_hover: 'rgba(226, 137, 79, 1)',
+}

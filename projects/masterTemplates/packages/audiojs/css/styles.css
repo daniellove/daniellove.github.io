@@ -1,0 +1,11 @@
+.audiojs .progress {
+	transform: initial;
+	margin: 0;
+	border-radius: initial;
+}
+
+.audiojs .play-pause {
+	-webkit-box-sizing: initial; 
+	-moz-box-sizing: initial;
+	box-sizing: initial; 
+}

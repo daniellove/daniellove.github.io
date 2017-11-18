@@ -1,0 +1,48 @@
+.flipCard {
+	cursor: pointer;
+	text-align: center;
+}
+
+.flipCard .front,
+.flipCard .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.65s ease-in;
+	-moz-transition: -webkit-transform 0.65s ease-in;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color :#fff8dc;
+	-webkit-box-shadow: 2px 2px 4px #cecece;
+	-moz-box-shadow: 2px 2px 4px #cecece;
+	box-shadow: 2px 2px 4px #cecece;
+}
+
+.flipCard .back {
+	background-color: #f0f8ff;
+}
+
+.flipCard .back,
+.flipCard.flipped .front {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}  
+.flipCard.flipped .back {   
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+.flipCard .front p,
+.flipCard .back p {
+	text-align: center;
+	margin: 0;
+	padding: 4px 10px;
+}
+
+.flipCard .front img {
+    padding: 10px
+}

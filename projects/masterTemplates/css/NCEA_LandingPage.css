@@ -1,0 +1,1121 @@
+body.curtainActive {
+	height: 100vh;
+	overflow: hidden;
+}
+
+#NCEA_container {
+	font-family: helvetica;
+	font-size: 18px;
+}
+
+#NCEA_container * {
+	margin: 0;
+	padding: 0;
+}
+
+/* BACKGROUND BANNER */
+
+#NCEA_container #welcomeBanner {
+	position: relative;
+	width: 1170px;
+	min-height: 21.5em;
+	margin-top: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	border-radius: 0.4em;
+}
+
+#NCEA_container #bannerImage {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+
+#NCEA_container #bannerFade {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(250,250,250,1) 51%,rgba(250,250,250,0) 75%);
+	background: -moz-linear-gradient(left, rgba(250,250,250,1) 51%, rgba(250,250,250,0) 75%);
+	background: linear-gradient(to right, rgba(250,250,250,1) 51%,rgba(250,250,250,0) 75%);
+}
+
+/* END OF BACKGROUND BANNER */
+/* COURSE WELCOME */
+
+#NCEA_container #welcomeBanner h1 {
+	font-size: 1.7em;
+	line-height: 2em;
+	font-weight: bold;
+}
+
+#NCEA_container #welcomeBanner h2 {
+	font-size: 1em;
+	line-height: 2em;
+	margin-bottom: 0.5em;
+	font-weight: normal;
+}
+
+#NCEA_container #welcomeBanner p {
+	font-size: 0.85em;
+	line-height: 1.4em;
+	margin-bottom: 0.5em;
+}
+
+#NCEA_container #courseWelcome {
+	position: relative;
+	width: 48%;
+	padding-left: 1.5%;
+	padding-bottom: 5em;
+}
+
+/* END OF COURSE WELCOME*/
+/* WELCOME BUTTONS*/
+
+#NCEA_container #buttonContainer {
+	position: absolute;
+	bottom: 1.4em;
+	padding-left: 1.5%;
+}
+
+#NCEA_container #buttonContainer > div {
+	float: left;
+	padding-right: 1em;
+	margin-right: 1em;
+	cursor: pointer;
+}
+
+#NCEA_container #buttonContainer > div:not(:last-child) {
+	background-image: url(https://tekuradev.desire2learn.com/shared/masterTemplates/images/NCEA/divider.png);
+	background-repeat: no-repeat;
+	background-size: auto 2em;
+	background-position: right;
+}
+
+#NCEA_container #buttonContainer img {
+	width: 1.4em;
+	margin-right: 0.5em;
+	float: left;
+}
+
+#NCEA_container #buttonContainer #eyeIcon {
+	margin-top: 0.3em;
+}
+
+#NCEA_container #buttonContainer h1 {
+	font-size: 1.1em;
+	line-height: 1.4em;
+	float: left;
+}
+
+#NCEA_container #buttonContainer p {
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 3em;
+	clear: both;
+}
+
+#NCEA_container #buttonContainer .landingButton:not([activate="getStarted"]):not(.touch):hover {
+	opacity: 0.85;
+}
+
+#NCEA_container #buttonContainer .landingButton[activate="getStarted"] {
+	display: inline-block;
+	font-family: helvetica;
+	font-size: 0.85em;
+	letter-spacing: 0.03em;
+	font-weight: bold;
+	padding: 0.6em 1.1em;
+	border-radius: 0.4em;
+	margin-top: 0.5em;
+	cursor: pointer;
+}
+
+/* END OF WELCOME BUTTONS */
+/* GENERIC LAYER WINDOWS */
+
+#NCEA_container #curtains,
+#NCEA_container .layerWindow {
+	opacity: 0;
+}
+
+.zBg {
+	z-index: -999!important;
+}
+
+#NCEA_container #curtains {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+#NCEA_container .layerWindow {
+	width: 95vw;
+	max-width: 920px;
+	height: 95vh;
+	max-height: 32em;
+	position: fixed;
+	top: 2.5vh;
+	left: 50%;
+	overflow-y: auto;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	box-shadow: 0 0 25px rgb(50, 50, 50);
+	z-index: 9999;
+	border-radius: 1px;
+}
+
+#NCEA_container .layerWindow .heading {
+	position: relative;
+	height: 3em;
+	width: 100%;
+	border-radius: 1px 1px 0 0;
+}
+
+#NCEA_container .layerWindow .heading h1 {
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+#NCEA_container .layerWindow .backBox,
+#NCEA_container .layerWindow .closeBox {
+	width: 3em;
+	height: 3em;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	cursor: pointer;
+}
+
+#NCEA_container .layerWindow .backBox {
+	left: 0;
+	background-image: url(https://tekuradev.desire2learn.com/shared/masterTemplates/images/NCEA/back.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 1.5em;
+}
+
+#NCEA_container .layerWindow .closeBox {
+	right: 0;
+	background-image: url(https://tekuradev.desire2learn.com/shared/masterTemplates/images/NCEA/close.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 1.4em;
+}
+
+#NCEA_container .layerWindow > .subheading {
+	height: 2.3em;
+	line-height: 2.3em;
+}
+
+#NCEA_container .layerWindow .subheading div {
+	float: left;
+	text-align: center;
+	width: 50%;
+	margin: 0;
+}
+
+#NCEA_container .layerWindow .subheading div:not(.active):not(.inactive) {
+	cursor: pointer;
+}
+
+#NCEA_container .layerWindow .subheading div[activate="false"] {
+	display: none;
+}
+
+#NCEA_container .layerWindow .subheading div[activate="false"] + div {
+	width: 100%;
+}
+
+#NCEA_container .layerWindow .layerContentContainer {
+	position: absolute;
+	top: 5.3em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+
+/* END OF GENERIC LAYER WINDOWS */
+/* GENERIC ACCORDION */
+
+#NCEA_container .accordion .tabHead {
+	cursor: pointer;
+	position: relative;
+}
+
+#NCEA_container .accordion .content {
+	width: 100%;
+	overflow: hidden;
+}
+
+#NCEA_container .accordion .chevron {
+	position: absolute;
+}
+
+#NCEA_container .accordion .chevron img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/* END OF GENERIC ACCORDION */
+/* COURSE OUTLINE */
+
+#NCEA_container .courseOutlineContent {
+	overflow: auto;
+}
+
+#NCEA_container .courseOutlineContent .outlineTopBar:after,
+#NCEA_container .courseOutlineContent .tab:after {
+	content: '';
+	height: 0;
+	width: 0;
+	display: block;
+	clear: both;
+}
+
+#NCEA_container .outlineTopBar {
+	height: 2.1em;
+	line-height: 3em;
+}
+
+#NCEA_container .outlineTopBar div,
+#NCEA_container .courseOutlineContent .tab,
+#NCEA_container .courseOutlineContent .content .subheading {
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+#NCEA_container .outlineTopBar p,
+#NCEA_container .courseOutlineContent p {
+	font-size: 0.7em;
+	line-height: 3em;
+}
+
+#NCEA_container .courseOutlineContent .tabHead {
+	height: 2em;
+	line-height: 3em;
+}
+
+#NCEA_container .outlineTopBar div {
+	float: left;
+}
+
+#NCEA_container .courseOutlineContent .tabHead div {
+	float: left;
+}
+
+#NCEA_container .outlineTopBar > div:nth-child(1),
+#NCEA_container .courseOutlineContent .standardNumber {
+	width: 15%;
+	font-weight: bold;
+}
+
+#NCEA_container .outlineTopBar > div:nth-child(1) p,
+#NCEA_container .courseOutlineContent .standardNumber p {
+	padding-left: 30%;
+}
+
+#NCEA_container .outlineTopBar > div:nth-child(2),
+#NCEA_container .courseOutlineContent .standardDescription {
+	width: 70%;
+	padding-right: 5%;
+}
+
+#NCEA_container .outlineTopBar > div:nth-child(3),
+#NCEA_container .courseOutlineContent .standardCredits {
+	width: 15%;
+}
+
+#NCEA_container .courseOutlineContent .standardCredits {
+	position: relative;
+}
+
+#NCEA_container .courseOutlineContent .content .subheading p {
+	font-weight: bold;
+}
+
+#NCEA_container .courseOutlineContent .content .module {
+	height: 1.7em;
+	padding-left: 10%;
+}
+
+#NCEA_container .courseOutlineContent .content .module div {
+	float: left;
+}
+
+#NCEA_container .courseOutlineContent .content .module div:nth-child(1) {
+	width: 10%;
+}
+
+#NCEA_container .courseOutlineContent .content .module div:nth-child(2) {
+	width: 90%;
+}
+
+#NCEA_container .courseOutlineContent .content .subheading p,
+#NCEA_container .courseOutlineContent .content .module div:nth-child(1) p {
+	padding-left: 5%;
+}
+
+#NCEA_container .courseOutlineContent.accordion .chevron {
+	top: 0.3em;
+	right: 35%;
+	width: 1.4em;
+	height: 1.4em;
+	border-radius: 50%;
+}
+
+#NCEA_container .courseOutlineContent.accordion .chevron img {
+	width: 0.7em;
+	margin-top: 1px;
+}
+
+/* END OF COURSE OUTLINE */
+/* OUTLINE CIRCLES */
+
+#NCEA_container #outlineCircles {
+	position: absolute;
+	top: 3em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+
+#NCEA_container #outlineCircles > div {
+	width: 9em;
+	height: 9em;
+	border-radius: 50%;
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+#NCEA_container #outlineCircles > div:not(.touch) {
+	transition: all 0.2s ease;
+}
+
+#NCEA_container #outlineCircles > div:not(.touch):hover {
+	width: 11em;
+	height: 11em;
+}
+
+#NCEA_container #outlineCircles > div p {
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#NCEA_container #outlineCircles[circles="2"] > div:nth-child(1) {top: 46%; left: 32%;}
+#NCEA_container #outlineCircles[circles="2"] > div:nth-child(2) {top: 46%; left: 67%;}
+
+#NCEA_container #outlineCircles[circles="3"] > div:nth-child(1) {top: 46%; left: 25%;}
+#NCEA_container #outlineCircles[circles="3"] > div:nth-child(2) {top: 46%; left: 50%;}
+#NCEA_container #outlineCircles[circles="3"] > div:nth-child(3) {top: 46%; left: 75%;}
+
+#NCEA_container #outlineCircles[circles="4"] > div:nth-child(1) {top: 30%; left: 32%;}
+#NCEA_container #outlineCircles[circles="4"] > div:nth-child(2) {top: 30%; left: 67%;}
+#NCEA_container #outlineCircles[circles="4"] > div:nth-child(3) {top: 70%; left: 32%;}
+#NCEA_container #outlineCircles[circles="4"] > div:nth-child(4) {top: 70%; left: 67%;}
+
+#NCEA_container #outlineCircles[circles="5"] > div:nth-child(1) {top: 30%; left: 25%;}
+#NCEA_container #outlineCircles[circles="5"] > div:nth-child(2) {top: 30%; left: 50%;}
+#NCEA_container #outlineCircles[circles="5"] > div:nth-child(3) {top: 30%; left: 75%;}
+#NCEA_container #outlineCircles[circles="5"] > div:nth-child(4) {top: 70%; left: 37%;}
+#NCEA_container #outlineCircles[circles="5"] > div:nth-child(5) {top: 70%; left: 63%;}
+
+#NCEA_container #outlineCircles[circles="6"] > div:nth-child(1) {top: 30%; left: 25%;}
+#NCEA_container #outlineCircles[circles="6"] > div:nth-child(2) {top: 30%; left: 50%;}
+#NCEA_container #outlineCircles[circles="6"] > div:nth-child(3) {top: 30%; left: 75%;}
+#NCEA_container #outlineCircles[circles="6"] > div:nth-child(4) {top: 70%; left: 25%;}
+#NCEA_container #outlineCircles[circles="6"] > div:nth-child(5) {top: 70%; left: 50%;}
+#NCEA_container #outlineCircles[circles="6"] > div:nth-child(6) {top: 70%; left: 75%;}
+
+#NCEA_container #outlineCircles[circles="7"] > div:nth-child(1) {top: 30%; left: 25%;}
+#NCEA_container #outlineCircles[circles="7"] > div:nth-child(2) {top: 30%; left: 50%;}
+#NCEA_container #outlineCircles[circles="7"] > div:nth-child(3) {top: 30%; left: 75%;}
+#NCEA_container #outlineCircles[circles="7"] > div:nth-child(4) {top: 70%; left: 15%;}
+#NCEA_container #outlineCircles[circles="7"] > div:nth-child(5) {top: 70%; left: 38.5%;}
+#NCEA_container #outlineCircles[circles="7"] > div:nth-child(6) {top: 70%; left: 61.5%;}
+#NCEA_container #outlineCircles[circles="7"] > div:nth-child(7) {top: 70%; left: 85%;}
+
+#NCEA_container #outlineCircles[circles="8"] > div:nth-child(1) {top: 30%; left: 15%;}
+#NCEA_container #outlineCircles[circles="8"] > div:nth-child(2) {top: 30%; left: 38.5%;}
+#NCEA_container #outlineCircles[circles="8"] > div:nth-child(3) {top: 30%; left: 61.5%;}
+#NCEA_container #outlineCircles[circles="8"] > div:nth-child(4) {top: 30%; left: 85%;}
+#NCEA_container #outlineCircles[circles="8"] > div:nth-child(5) {top: 70%; left: 15%;}
+#NCEA_container #outlineCircles[circles="8"] > div:nth-child(6) {top: 70%; left: 38.5%;}
+#NCEA_container #outlineCircles[circles="8"] > div:nth-child(7) {top: 70%; left: 61.5%;}
+#NCEA_container #outlineCircles[circles="8"] > div:nth-child(8) {top: 70%; left: 85%;}
+
+/* END OF OUTLINE CIRCLES */
+/* NEED TO KNOW */
+
+#NCEA_container #needToKnowContainer {
+	position: absolute;
+	top: 3em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: rgb(51, 51, 51);
+}
+
+#NCEA_container #needToKnowContainer .needToKnowContent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 30%;
+	overflow-y: auto;
+	padding: 1em 1.4em;
+	border-radius: 0 0 0 1px;
+}
+
+#NCEA_container #needToKnowContainer .needToKnowContent.needToKnowPartial {
+	right: 0;
+}
+
+#NCEA_container #needToKnowContainer .needToKnowContent:first-child {
+	z-index: 0;
+}
+
+#NCEA_container #needToKnowContainer a,
+#NCEA_container #needToKnowContainer p,
+#NCEA_container #needToKnowContainer td,
+#NCEA_container #needToKnowContainer li {
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+#NCEA_container #needToKnowContainer a,
+#NCEA_container #needToKnowContainer a:visited {
+	color: rgb(0, 97, 127);
+}
+
+#NCEA_container #needToKnowContainer .needToKnowContent > a {
+	display: block;
+	margin-top: -1em;
+	margin-bottom: 1em;
+}
+
+#NCEA_container #needToKnowContainer h2 {
+	font-size: 1.4em;
+	line-height: 1.1em;
+	margin-bottom: 0.3em;
+}
+
+#NCEA_container #needToKnowContainer h3 {
+	font-size: 1.1em;
+	line-height: 1.2em;
+	margin-bottom: 0.6em;
+}
+
+#NCEA_container #needToKnowContainer p {
+	margin-bottom: 1.1em;
+}
+
+#NCEA_container #needToKnowContainer ul,
+#NCEA_container #needToKnowContainer ol {
+	margin-top: -0.7em;
+	margin-bottom: 1.1em;
+	padding-left: 2.5em;
+}
+
+#NCEA_container #needToKnowContainer ul {
+	list-style: disc;
+}
+
+#NCEA_container #needToKnowContainer table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+#NCEA_container #needToKnowContainer table td {
+	border: 1px solid rgb(0, 0, 0);
+	padding: 0.3em;
+	min-width: 5vw;
+}
+
+#NCEA_container #needToKnowMenu {
+	position: absolute;
+	top: 0;
+	left: 70%;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+
+#NCEA_container #needToKnowMenu > div {
+	width: 100%;
+	cursor: pointer;
+}
+
+#NCEA_container #needToKnowMenu > div:not(.genericSubmenu) {
+	border-bottom: 1px solid rgb(210, 210, 210);
+	border-left: 1px solid rgb(210, 210, 210);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+#NCEA_container #needToKnowMenu p {
+	font-size: 0.7em;
+	line-height: 1.6em;
+	font-weight: normal;
+	padding-left: 1em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	margin: 0;
+}
+
+#NCEA_container #needToKnowMenu p.activeBorder {
+	border-left-width: 0.2em;
+	border-left-style: solid;
+	padding-left: 0.8em;
+}
+
+#NCEA_container #needToKnowMenu.accordion .chevron {
+	width: 0.5em;
+	right: 0.8em;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* END OF NEED TO KNOW */
+/* INSTRUCTIONS */
+
+#NCEA_container #instructions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 1.1em 2.1em;
+	overflow-y: auto;
+}
+
+#NCEA_container #safety-declaration {
+	margin-top: 1.7em;
+}
+
+#NCEA_container #instructions > div {
+	width: 100%;
+}
+
+#NCEA_container #instructions div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#NCEA_container #instructions .buttons {
+	width: 23%;
+}
+
+#NCEA_container #instructions .buttons a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 0.3em;
+	font-size: 0.9em;
+	line-height: 2.4em;
+}
+
+#NCEA_container #instructions .buttons a:not(.touch):hover {
+	opacity: 0.85;
+}
+
+#NCEA_container #instructions .buttons a {
+	margin-bottom: 0.6em;
+}
+
+#NCEA_container #instructions .content {
+	width: 73%;
+	margin-left: 4%;
+}
+
+#NCEA_container #instructions .long-content {
+	width: 100%;
+	border-top: 1px solid rgb(240, 240, 240);
+	padding-top: 1em;
+	margin-top: 1em;
+}
+
+
+#NCEA_container #instructions p {
+	font-size: 0.8em;
+	line-height: 1.3em;
+	padding-left: 5%;
+}
+
+#NCEA_container #instructions li {
+	margin-bottom: 0.6em;
+	margin-left: 9%;
+	padding-left: 2%;
+	font-size: 0.8em;
+	line-height: 1.3em;
+}
+
+/* END OF INSTRUCTIONS */
+/* PATHWAYS/TOPICS */
+
+#NCEA_container div[listenfor="Pathways"],
+#NCEA_container div[listenFor="Topics"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+
+#NCEA_container div[listenfor="Pathways"] .topicCircle {
+	position: absolute;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	width: 21%;
+	top: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#NCEA_container div[listenfor="Pathways"] .topicCircle:nth-child(1) {left: 25%;}
+#NCEA_container div[listenfor="Pathways"] .topicCircle:nth-child(2) {left: 50%;}
+#NCEA_container div[listenfor="Pathways"] .topicCircle:nth-child(3) {left: 75%;}
+
+#NCEA_container .topicCircle[topics] {
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 20%;
+}
+
+#NCEA_container .topicCircle[topics="2"]:nth-child(1) {top: 62%; left: 32%;}
+#NCEA_container .topicCircle[topics="2"]:nth-child(2) {top: 62%; left: 67%;}
+
+#NCEA_container .topicCircle[topics="3"]:nth-child(1) {top: 62%; left: 25%;}
+#NCEA_container .topicCircle[topics="3"]:nth-child(2) {top: 62%; left: 50%;}
+#NCEA_container .topicCircle[topics="3"]:nth-child(3) {top: 62%; left: 75%;}
+
+#NCEA_container .topicCircle[topics="4"]:nth-child(1) {top: 43%; left: 32%;}
+#NCEA_container .topicCircle[topics="4"]:nth-child(2) {top: 43%; left: 67%;}
+#NCEA_container .topicCircle[topics="4"]:nth-child(3) {top: 89%; left: 32%;}
+#NCEA_container .topicCircle[topics="4"]:nth-child(4) {top: 89%; left: 67%;}
+
+#NCEA_container .topicCircle[topics="5"]:nth-child(1) {top: 43%; left: 25%;}
+#NCEA_container .topicCircle[topics="5"]:nth-child(2) {top: 43%; left: 50%;}
+#NCEA_container .topicCircle[topics="5"]:nth-child(3) {top: 43%; left: 75%;}
+#NCEA_container .topicCircle[topics="5"]:nth-child(4) {top: 89%; left: 37%;}
+#NCEA_container .topicCircle[topics="5"]:nth-child(5) {top: 89%; left: 63%;}
+
+#NCEA_container .topicCircle[topics="6"]:nth-child(1) {top: 43%; left: 25%;}
+#NCEA_container .topicCircle[topics="6"]:nth-child(2) {top: 43%; left: 50%;}
+#NCEA_container .topicCircle[topics="6"]:nth-child(3) {top: 43%; left: 75%;}
+#NCEA_container .topicCircle[topics="6"]:nth-child(4) {top: 89%; left: 25%;}
+#NCEA_container .topicCircle[topics="6"]:nth-child(5) {top: 89%; left: 50%;}
+#NCEA_container .topicCircle[topics="6"]:nth-child(6) {top: 89%; left: 75%;}
+
+#NCEA_container .topicCircle[topics="7"]:nth-child(1) {top: 43%; left: 25%;}
+#NCEA_container .topicCircle[topics="7"]:nth-child(2) {top: 43%; left: 50%;}
+#NCEA_container .topicCircle[topics="7"]:nth-child(3) {top: 43%; left: 75%;}
+#NCEA_container .topicCircle[topics="7"]:nth-child(4) {top: 89%; left: 15%;}
+#NCEA_container .topicCircle[topics="7"]:nth-child(5) {top: 89%; left: 38.5%;}
+#NCEA_container .topicCircle[topics="7"]:nth-child(6) {top: 89%; left: 61.5%;}
+#NCEA_container .topicCircle[topics="7"]:nth-child(7) {top: 89%; left: 85%;}
+
+#NCEA_container .topicCircle[topics="8"]:nth-child(1) {top: 43%; left: 15%;}
+#NCEA_container .topicCircle[topics="8"]:nth-child(2) {top: 43%; left: 38.5%;}
+#NCEA_container .topicCircle[topics="8"]:nth-child(3) {top: 43%; left: 61.5%;}
+#NCEA_container .topicCircle[topics="8"]:nth-child(4) {top: 43%; left: 85%;}
+#NCEA_container .topicCircle[topics="8"]:nth-child(5) {top: 89%; left: 15%;}
+#NCEA_container .topicCircle[topics="8"]:nth-child(6) {top: 89%; left: 38.5%;}
+#NCEA_container .topicCircle[topics="8"]:nth-child(7) {top: 89%; left: 61.5%;}
+#NCEA_container .topicCircle[topics="8"]:nth-child(8) {top: 89%; left: 85%;}
+
+#NCEA_container .topicCircle img {
+	width: 70%;
+	position: absolute;
+	top: -0.6em;
+	left: 50%;
+	-webkit-transform: translate(-50%, -100%);
+	-moz-transform: translate(-50%, -100%);
+	transform: translate(-50%, -100%);
+}
+
+#NCEA_container .topicCircle img {
+	transition: all 0.2s ease;
+}
+
+#NCEA_container .topicCircle:not(.touch):hover img {
+	width: 75%;
+}
+
+#NCEA_container .topicCircle h3 {
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#NCEA_container .topicCircle p {
+	font-size: 0.7em;
+	line-height: 1.5em;
+}
+
+/* PATHWAYS/TOPICS/MODULES */
+
+#NCEA_container .moduleContainer {
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*padding-top: 1.1em;*/
+}
+
+#NCEA_container .moduleContainer > div {
+	float: left;
+	position: relative;
+	width: 50%;
+}
+
+#NCEA_container .unclick:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	opacity: 0.4;
+}
+
+#NCEA_container .moduleContainer a {
+	float: left;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
+}
+
+#NCEA_container .moduleContainer a:not(.touch):hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+#NCEA_container .moduleContainer > div:nth-child(odd) {
+	clear: both;
+}
+
+#NCEA_container .moduleContainer > div:nth-child(even) {
+	border-left: 1px solid rgb(220, 220, 220);
+	box-sizing: border-box;
+}
+
+#NCEA_container .moduleContainer img {
+	width: 25%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#NCEA_container .moduleContainer img,
+#NCEA_container .moduleContainer .content {
+	float: left;
+}
+
+#NCEA_container .moduleContainer .content:not(.noBlurb) {
+	width: 60%;
+	padding-right: 5%;
+	padding-top: 0.6em;
+}
+
+#NCEA_container .moduleContainer .content.noBlurb {
+	position: absolute;
+	left: 35%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#NCEA_container .moduleContainer .content h2 {
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+#NCEA_container .moduleContainer .content h3 {
+	font-size: 1em;
+	line-height: 1.1em;
+	margin-bottom: 0.5em;
+}
+
+#NCEA_container .moduleContainer .content p {
+	font-size: 0.7em;
+	line-height: 1.1em;
+}
+
+/* END OF PATHWAYS/TOPICS/MODULES */
+/* MEDIA QUERIES */
+@media screen and (max-width: 1130px) { /* anything smaller than OTLE */
+	#NCEA_container #welcomeBanner {
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 970px) { /* tablets and phones */
+	#NCEA_container #bannerImage,
+	#NCEA_container #bannerFade {
+		display: none;
+	}
+	#NCEA_container #courseWelcome {
+		width: 100%;
+		padding-bottom: 1em;
+	}
+	#NCEA_container .layerWindow {
+		max-width: initial;
+		max-height: initial;
+	}
+	#NCEA_container #instructions .buttons {
+		width: 30%;
+	}
+	#NCEA_container #instructions .content {
+		width: 66%;
+	}
+	#NCEA_container .layerWindow div[listenfor="Pathways"] .topicCircle {
+		position: relative;
+		top: initial;
+		left: initial;
+		transform: initial;
+		width: 100%;
+		clear: both;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	#NCEA_container .layerWindow div[listenfor="Pathways"] .topicCircle * {
+		position: relative;
+		top: initial;
+		left: initial;
+		transform: initial;
+		margin: 0;
+		float: left;
+		text-align: left;
+	}
+	#NCEA_container .layerWindow div[listenfor="Pathways"] .topicCircle img {
+		width: 20%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#NCEA_container .layerWindow div[listenfor="Pathways"] .topicCircle h3,
+	#NCEA_container .layerWindow div[listenfor="Pathways"] .topicCircle p {
+		width: 60%;
+		margin-right: 5%;
+	}
+	#NCEA_container .layerWindow div[listenfor="Topics"] .topicCircle {
+		position: relative;
+		top: initial;
+		left: initial;
+		transform: initial;
+		width: 50%;
+		padding-top: 1.3em;
+		padding-bottom: 1.3em;
+	}
+	#NCEA_container .layerWindow div[listenfor="Topics"] .topicCircle * {
+		position: relative;
+		top: initial;
+		left: initial;
+		transform: initial;
+		margin: 0;
+		text-align: left;
+	}
+	#NCEA_container .layerWindow div[listenfor="Topics"] .topicCircle img {
+		width: 25%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#NCEA_container .layerWindow div[listenfor="Topics"] .topicCircle h3 {
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		transform: translateY(-50%);
+		left: 35%;
+		width: 60%;
+	}
+}
+@media screen and (min-width: 737px) and (max-width: 970px) { /* portrait tablets */
+	#NCEA_container .layerWindow div[listenfor="Pathways"] .topicCircle h3 {
+		padding-top: 1.5em;
+		padding-bottom: 0.5em;
+	}
+	#NCEA_container .layerWindow div[listenfor="Topics"] .topicCircle {
+		float: left;
+	}
+	#NCEA_container .layerWindow div[listenfor="Topics"] .topicCircle:nth-child(even) {
+		border-left: 1px solid rgb(220, 220, 220);
+		box-sizing: border-box;
+	}
+}
+@media screen and (min-width: 569px) and (max-width: 736px) { /* landscape phones (not including iPhone 5 and smaller) */
+	#NCEA_container .layerWindow div[listenfor="Pathways"] .topicCircle h3 {
+		padding-top: 1em;
+	}
+}
+@media screen and (max-width: 736px) { /* phones */
+	#NCEA_container #buttonContainer .landingButton p {
+		display: none;
+	}
+	#NCEA_container #buttonContainer {
+		position: relative;
+		bottom: initial;
+	}
+	#NCEA_container #buttonContainer > div:not(:last-child) {
+		background: none;
+		height: 2.54em;
+		padding: 0.5em 0;
+		display: block;
+		float: initial;
+	}
+	#NCEA_container #buttonContainer > div:last-child {
+		margin-top: 0.5em;
+	}
+	#NCEA_container .layerWindow[listenFor="courseOutline"] .outlineTopBar > div:nth-child(2),
+	#NCEA_container .layerWindow[listenFor="courseOutline"] .standardDescription,
+	#NCEA_container .courseOutlineContent .content .module div:nth-child(2) {
+		display: none;
+	}
+	#NCEA_container .courseOutlineContent .standardNumber p {
+		padding-left: 10%;
+	}
+	#NCEA_container .layerWindow[listenFor="courseOutline"] .outlineTopBar > div,
+	#NCEA_container .layerWindow[listenFor="courseOutline"] .standardNumber,
+	#NCEA_container .layerWindow[listenFor="courseOutline"] .standardCredits {
+		width: 50%;
+	}
+	#NCEA_container .courseOutlineContent .content .module div:nth-child(1) {
+		width: 100%;
+	}
+
+	#NCEA_container .courseOutlineContent .content .subheading p {
+		line-height: 1.2em;
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+	}
+	#NCEA_container #needToKnowContainer .needToKnowContent {
+		right: 0;
+		padding-right: 15%;
+	}
+	#NCEA_container #n2nBurger {
+		border: 3px solid #7b7b7b;
+		border-radius: 50%;
+		position: absolute;
+		top: 1em;
+		width: 10%;
+		right: 2.5%;
+		background-color: #FFF;
+	}
+	#NCEA_container #n2nBurger .burgerBar,
+	#NCEA_container #n2nBurger:before,
+	#NCEA_container #n2nBurger:after {
+		position: absolute;
+		top: 50%;
+		left: 15%;
+		width: 70%;
+		border-top: 1px solid #7b7b7b;
+		border-bottom: 1px solid #7b7b7b;
+		opacity: 0.85;
+	}
+	#NCEA_container #n2nBurger:before,
+	#NCEA_container #n2nBurger:after {
+		content: '';
+		display: block;
+	}
+	#NCEA_container #n2nBurger:before {
+		top: 30%;
+	}
+	#NCEA_container #n2nBurger:after {
+		top: 70%;
+	}
+	#NCEA_container #needToKnowMenu {
+		left: 100%;
+		width: 100%;
+		transition: all 1s ease-in-out;
+		overflow: hidden;
+	}
+	#NCEA_container .layerWindow .heading h1 {
+		margin: 0;
+		padding-left: 2em;
+		font-size: 1.4em;
+		line-height: 2.1em;
+		text-align: left;
+	}
+	#NCEA_container .layerWindow .heading h1.shrink1 {
+		font-size: 1.1em;
+		padding-top: 0.3em;
+	}
+	#NCEA_container .layerWindow .heading h1.shrink2 {
+		line-height: 1.1em;
+	}
+	#NCEA_container #needToKnowMenu.n2nShowing {
+		left: 0;
+		overflow-y: auto;
+	}
+	#NCEA_container #needToKnowMenu.accordion .chevron {
+		right: 20%;
+	}
+	#NCEA_container #instructions {
+		overflow-x: hidden;
+	}
+	#NCEA_container #instructions .buttons {
+		width: 200%;
+	}
+	#NCEA_container #instructions .buttons a {
+		display: inline-block;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+		margin-left: 25%;
+		margin-right: 30%;
+		padding-left: 0.4em;
+		padding-right: 0.4em; 
+	}
+	#NCEA_container #instructions .content {
+		width: 100%;
+	}
+	#NCEA_container .moduleContainer > div {
+		width: 100%;
+	}
+	#NCEA_container .moduleContainer > div:nth-child(even) {
+		border-left: none;
+	}
+	#NCEA_container .layerWindow div[listenfor="Topics"] .topicCircle {
+		width: 100%;
+	}
+}
+/* END OF MEDIA QUERIES */

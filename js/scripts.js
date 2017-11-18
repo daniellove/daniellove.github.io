@@ -1,3 +1,7 @@
+var trigger = 'click'
+if (touchDevice()) {
+	trigger = 'touchstart'
+}
 function touchDevice() {
 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
@@ -6,11 +10,11 @@ $(function() {
 	if (touchDevice()) {
 		$('.navItem').addClass('touch')
 	}
-	$('#mobileMenu').on('touchstart', function() {
+	$('#mobileMenu').on(trigger, function() {
 		$('#navItems').slideToggle('fast').css('display', 'inline-block')
 	})
 	// if ($(window).width() < 568) {
-		$('#navItems').on('touchstart', function() {
+		$('#navItems').on(trigger, function() {
 			$('#navItems').fadeOut(100)
 		})
 	// }
@@ -31,11 +35,7 @@ $(function() {
 })
 
 $(function() {
-	var trigger = 'click'
-	
-	if (touchDevice()) {
-		trigger = 'touchstart'
-	} else {
+	if (!touchDevice()) {
 		var timeDelay = 4500
 		var timer;
 		runCarousel()
@@ -51,6 +51,10 @@ $(function() {
 	}
 	$(document).on(trigger, '.rightThumb', shiftRight)
 	$(document).on(trigger, '.leftThumb', shiftLeft)
+
+	$(document).on(trigger, '.showing', function() {
+		window.open($(this).attr('location'), '_blank')
+	})
 
 	
 	function shiftRight() {

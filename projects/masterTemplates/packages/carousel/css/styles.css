@@ -1,0 +1,80 @@
+.carousel .item {
+	position: absolute;
+	left: 0;
+	top: 0;
+	float: left;
+	display: inline-block;
+	z-index: 10;
+	-webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.carousel .item.settingUp {
+	position: relative;
+}
+
+.carousel .item.droppingOut {
+	z-index: 20;
+}
+
+.carousel .item.active {
+	z-index: 30;
+}
+
+.carousel .item.left {
+	top: 0;
+	left: -100%;
+}
+
+.carousel .item.right {
+	top: 0;
+	left: 100%;
+}
+
+.carousel .carousel-indicators,
+.carousel .carousel-caption,
+.carousel .carouselNav {
+	z-index: 40;
+	opacity: 0.8;
+}
+
+.carousel .viewer {
+	overflow: hidden;
+}
+
+.carousel .carousel-caption p {
+	text-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+.carousel .carousel-indicators li {
+	margin: 1px 3px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+	cursor: pointer;
+}
+
+.carousel .img-responsive {
+	padding: 0;
+	margin: 0;
+}
+
+.carousel .carouselNav {
+	color: #fff;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 3em;
+	cursor: pointer;
+}
+
+.carousel .carouselNav[nav="left"] {
+	left: 2%;
+}
+
+.carousel .carouselNav[nav="right"] {
+	right: 2%;
+}

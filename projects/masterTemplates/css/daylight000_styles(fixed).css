@@ -1,0 +1,169 @@
+html body {
+	padding-top: 0;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1170px;
+	overflow-x: hidden;
+}
+
+body #container,
+body .image-caption-single img,
+body .image-caption-single p,
+body .image-caption-container,
+body .image-caption img {
+	width: 100%;
+}
+
+body #header, body #footer {
+	padding-left: 33px;
+	position: relative;
+}
+
+body .image-caption,
+body .image-caption-single {
+	float: initial;
+	margin-right: 0;
+}
+
+body .activity-section,
+body .activity-section-wide {
+	margin-right: 20px;
+}
+
+body .right-activity-info {
+	position: absolute;
+    top: 0;
+    right: 0;
+}
+
+body #header, body #footer,
+body #container > .content,
+body .key-points-container,
+body .quote-box,
+body .activity-section,
+body .activity-section-wide,
+body .image-caption,
+body .left-activity-info,
+body .content-text > img,
+body .upload-to-dropbox > p {
+	width: auto;
+}
+
+body .content-text,
+body .activity-section > p,
+body .activity-section-wide > p,
+body .key-points-container > p,
+body .quote-box > p,
+body p.text,
+body .bullet-intro,
+body .content > ul:not(.content-text),
+body .content > ol:not(.content-text),
+body .content div:not(.tabs):not(.carousel-example-generic) > ul:not(.content-text),
+body .content div:not(.tabs):not(.carousel-example-generic) > ol:not(.content-text),
+body #large-image-activity,
+body .large-image,
+body .body-image,
+body .image-caption-single,
+body .image-caption,
+body .upload-to-dropbox,
+body .ack-full {
+	margin-left: 33px;
+	width: 59%;
+}
+
+body .content ul:not(.content-text),
+body .content ol:not(.content-text):not(.carousel-indicators) {
+	margin-left: 0px;
+	width:auto;
+}
+
+
+body .activity-section > p,
+body .activity-section-wide > p,
+body .activity-section > ul:not(.content-text),
+body .activity-section-wide > ul:not(.content-text),
+body .activity-section > ol:not(.content-text),
+body .activity-section-wide > ol:not(.content-text),
+body .ack-full {
+	margin-left: 0;
+}
+
+body .activity-section-narrow {
+	width: 59%;
+}
+
+body .activity-section-narrow > p,
+body .activity-section-narrow > ul:not(.content-text),
+body .activity-section-narrow > ol:not(.content-text) {
+	width: auto;
+}
+
+body .content > ul:not(.content-text) li,
+body .content > ol:not(.content-text) li,
+body .content div:not(.tabs):not(.carousel-example-generic) > ul:not(.content-text) li,
+body .content div:not(.tabs):not(.carousel-example-generic) > ol:not(.content-text) li {
+	width: 92%;
+	padding-left: 2%;
+	margin-left: 6%;
+}
+
+
+
+body #footer #previous-link,
+body #footer #back-link,
+body #footer #forward-link,
+body #footer #next-link {
+	position: absolute;
+	left: initial;
+	right: 170px;
+}
+
+body #footer #previous-link,
+body #footer #back-link {
+	transform: translateX(-20px)
+}
+
+body #footer #forward-link,
+body #footer #next-link {
+	transform: translateX(100%)
+}
+
+/* For iPad standard landscape and iPad pro portrait */
+@media screen and (min-width: 970px) and (max-width: 1169px) {
+html body {
+		width: 974px;
+	}
+}
+
+
+/* for iPad standard portrait */
+@media screen and (min-width: 730px) and (max-width: 970px) {
+	html body {
+		width: 731px;
+	}
+	html body #dropdownMenu1.dropdown-menu,
+	html body #dropdownMenu2.dropdown-menu,
+	html body #dropdownMenu3.dropdown-menu,
+	html body #dropdownMenu4.dropdown-menu {
+		max-width: 700px;
+	}
+	body .content-text,
+	body .activity-section > p,
+	body .activity-section-wide > p,
+	body .activity-section-narrow > p,
+	body .key-points-container > p,
+	body .quote-box > p,
+	body p.text,
+	body .bullet-intro,
+	body .content ul:not(.content-text),
+	body .content ol:not(.content-text),
+	body #large-image-activity,
+	body .large-image,
+	body .image-caption-single,
+	body .image-caption,
+	body .activity-section-narrow,
+	body .upload-to-dropbox,
+	body .ack-full {
+		max-width: 440px;
+	}
+}

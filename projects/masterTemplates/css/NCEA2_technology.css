@@ -1,0 +1,215 @@
+/*-------- NCEA 2 TEMPLATE | THE ARTS ---------*/
+/* PRIMARY COLOUR */
+/*   default brown rgb(148, 84, 64)   */
+/*   darker brown rgb(74, 42, 32)   */
+/*   lighter brown rgb(69, 118, 102)   */
+/*   lightest brown rgba(148, 84, 64, 0.12)   */
+
+/* SECONDARY COLOUR */
+/*   default green rgb(123, 149, 33)   */
+/*   darker green rgb(71, 85, 21)   */
+/*   NA   */
+/*   lightest green rgba(123, 149, 33, 0.12)   */
+
+/* DROPBOX COLOUR */
+/*   default purple rgb(114, 55, 128)   */
+/*   darker purple rgb(59, 38, 64)   */
+/*   NA   */
+/*   lightest purple rgba(114, 55, 128, 0.12)   */
+
+/*-------------- GENERAL STYLES ---------------*/
+
+h2,
+h3,
+h4 {
+	color: rgba(148, 84, 64, 1);
+}
+
+.panel-default>.panel-heading {
+	border-color: rgba(148, 84, 64, 1);
+	background-color: rgba(148, 84, 64, 1);
+}
+
+/*-------------- GENERAL BUTTON ---------------*/
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.active.focus, 
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover  {
+	background-color: rgba(148, 84, 64, 1);
+	border-color: rgba(148, 84, 64, 1);
+}
+
+.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary {
+	background-color: rgba(148, 84, 64, 0.85);
+	border-color: rgba(148, 84, 64, 0);
+}
+
+.externalButton,
+.externalButton:focus,
+.externalButton.focus,
+.externalButton:active,
+.externalButton.active,
+.externalButton.active.focus, 
+.externalButton.active:focus, 
+.externalButton.active:hover,
+.externalButton:active.focus,
+.externalButton:active:focus,
+.externalButton:active:hover,
+.open>.dropdown-toggle.externalButton.focus,
+.open>.dropdown-toggle.externalButton:focus, 
+.open>.dropdown-toggle.externalButton:hover,
+.externalButton.active.focus, 
+.externalButton.active:focus, 
+.externalButton.active:hover,
+.externalButton:active.focus,
+.externalButton:active:focus,
+.externalButton:active:hover,
+.open>.dropdown-toggle.externalButton.focus,
+.open>.dropdown-toggle.externalButton:focus, 
+.open>.dropdown-toggle.externalButton:hover {
+	background-color: rgba(123, 149, 33, 1);
+	border-color: rgba(123, 149, 33, 1);
+}
+
+.externalButton:hover {
+	background-color: rgba(123, 149, 33, 0.85);
+	border-color: rgba(123, 149, 33, 0); 
+}
+
+/*---------- CHECK AND RESET BUTTON -----------*/
+.btn-primary.reset,
+.btn-primary.checkAnswer {
+	color: rgba(148, 84, 64, 1);
+	border-color: rgba(148, 84, 64, 1);
+	background-color: transparent;
+}
+
+.btn-primary.reset:hover,
+.btn-primary.checkAnswer:hover {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(148, 84, 64, 1);
+	border-color: rgba(148, 84, 64, 1);
+}
+
+/*-------------- GENERAL ALERT ----------------*/
+.importantAlert {
+	background: rgba(148, 84, 64, 0.12);
+	border-color: rgb(148, 84, 64);
+}
+
+.cautionAlert {
+	background: rgba(123, 149, 33, 0.12);
+	border-color: rgb(123, 149, 33);
+}
+
+/*----------- ACTIVITY BOX ALERT --------------*/
+.importantAlert-sidebar {
+	background: rgba(148, 84, 64, 0.12);
+	border-color: rgba(148, 84, 64, 1);
+}
+
+.cautionAlert-sidebar {
+	background: rgba(123, 149, 33, 0.12);
+	border-color: rgba(123, 149, 33, 1);
+}
+
+/*------------------ HEADER -------------------*/
+#moduleHeaderContainer {
+	background-color: rgba(148, 84, 64, 1);
+}
+
+/*--------------- NAV DROPDOWN ----------------*/
+.dropdownChevron {
+	color: rgb(148, 84, 64);
+}
+
+.nceaStandardContainer,
+.timeFrameContainer {
+	border-color: rgba(148, 84, 64, 1);
+}
+
+.timeFrameContainer p {
+	color: rgba(148, 84, 64, 1);
+}
+
+.dlFullModuleContainer {
+	border-color: rgba(123, 149, 33, 1);
+
+}
+
+.dlFullModuleContainer p {
+	color: rgba(123, 149, 33, 1);
+}
+
+/*------------- ACTIVITY PANELS ---------------*/
+.activity:hover .panel-body {
+	border-color: rgba(148, 84, 64, 1);
+}
+
+/*------------- ACTIVITY DROPBOX --------------*/
+.dropbox:hover .panel-body {
+	border-color: rgba(114, 55, 128, 1);
+}
+.dropbox>.panel-heading,
+.dropbox .btn-primary  { 
+	background-color: rgba(114, 55, 128, 1);
+	border-color: rgba(114, 55, 128, 1);
+}
+
+.dropbox>.panel-heading {
+	color: rgba(255, 255, 255, 1); 
+}
+
+.dropbox .btn-primary:hover {
+	background-color: rgba(114, 55, 128, 0.85);
+	border-color: rgba(114, 55, 128, 1);
+}
+
+/*------------------- TABS --------------------*/
+.nav-tabs {
+	border-color: rgba(148, 84, 64, 1);
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus {
+	background-color: rgba(148, 84, 64, 1);
+}
+
+/*--------------- Audio table -----------------*/
+.audioTablePlaying {
+	background: rgba(175, 218, 163, 0.55)!important;
+}
+
+/*------------------ FOOTER -------------------*/
+.progress-bar {
+	background-color: rgba(148, 84, 64, 1);
+}
+#back-link>i,
+#forward-link>i {
+	color: rgb(148, 84, 64);
+}
+
+/* hiddenInfo */
+.audioTrigger {
+	border-bottom: 3px solid rgba(123, 149, 33, 1);
+}
+.infoTrigger {
+	border-bottom: 3px solid rgba(148, 84, 64, 1);
+}
+
+.hiddenInfo {
+	background-color: rgba(148, 84, 64, 1);
+}

@@ -1,0 +1,129 @@
+.clearDiv {
+	clear: both;
+}
+
+#LP_container {
+	max-width: 1170px;
+	margin: 0 auto;
+	font-family: helvetica;
+	line-height: 1;
+}
+
+#LP_container span {
+	display: block;
+    line-height: 1.4em;
+}
+
+#butttonBlock,
+#contentBlock {
+	float: left;
+	border-top: 4px solid #000;
+	padding-top: 10px;
+}
+
+#butttonBlock {
+	width: 35%;
+	margin-right: 5%;
+}
+
+#butttonBlock .accordionTab {
+	margin-bottom: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+#butttonBlock .accordionTab:hover {
+	opacity: 0.85;
+}
+
+#butttonBlock .accordionTab.Active {
+	opacity: 0.6;
+}
+
+#butttonBlock .accordionTab img {
+	width: 100%;
+}
+
+#butttonBlock .accordionTab span {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    font-size: 2em;
+    color: #FFF;
+}
+
+#contentBlock {
+	width: 60%;
+}
+
+#contentBlock .content, #contentBlock .intro-box {
+	border-bottom: 1px solid #000;
+	color: #000;
+}
+
+#contentBlock .instructions .heading {
+	font-size: 2em;
+}
+
+#contentBlock .instructions .content,
+#contentBlock .instructions .intro-box {
+	padding-bottom: 0.5em;
+}
+
+
+#contentBlock .accordionContent .contentContainer {
+	clear: both;
+	display: block;
+	cursor: pointer;
+}
+
+#contentBlock .accordionContent .contentContainer:hover {
+	background-color: rgba(0, 0, 0, 0.2)
+}
+
+#contentBlock .accordionContent .itemNumber,
+#contentBlock .accordionContent .content,
+#contentBlock .accordionContent .intro-box {
+	float: left;
+}
+
+#contentBlock .accordionContent .itemNumber {
+	width: 10%;
+}
+
+#contentBlock .accordionContent .content {
+	width: 90%;
+	font-size: 1.1em;
+}
+
+#contentBlock .accordionContent .intro-box {
+	width: 100%;
+	font-size: 0.9em;
+}
+
+#contentBlock .accordionContent .itemNumber span {
+	text-align: center;
+	font-size: 2.1em;
+	margin-top: 5px;
+	color: #f15a24;
+}
+
+#contentBlock .accordionContent .heading {
+	font-size: 1.2em;
+	margin: 0.5em 5% 0.5em 0;
+	font-weight: bold;
+}
+
+#contentBlock .accordionContent .blurb {
+	margin: 0 5% 0 0;
+	padding-bottom: 0.5em;
+}
+
+#contentBlock .accordionContent .intro {
+	margin: 0 5% 0 0;
+	padding: 1em 0em 1em 4em;
+}
+
+.blurb {
+	font-size: 0.9em;
+}

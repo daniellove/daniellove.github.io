@@ -1,0 +1,131 @@
+/* Info trigger styles */
+.hoverInfo {
+	position: relative;
+}
+
+.infoTrigger {
+	background-color: #DDD;
+	border-bottom: 1px dashed #000;
+    text-decoration: none;
+	cursor: pointer;
+}
+
+.hiddenInfo {
+	width: 200px;
+	background-color: #DDD;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+
+.hiddenInfo .padding {
+	padding: 13px;	
+}
+
+.hiddenInfo p {
+	width: 100%;
+	margin: 0;
+	line-height: 25px;
+}
+/* End of info trigger styles */
+
+
+/* Audio trigger styles */
+.audioTrigger {
+	border-bottom: 1px dashed #000;
+    text-decoration: none;
+	cursor: pointer;
+}
+/*End of audio trigger styles */
+
+
+/*Caption styles */
+.captionTrigger {
+	/* This element is created in the .js */
+	position: relative;
+	cursor: pointer;
+	/* The lines below may affect your position.
+	Remove if needed. */
+	display: -webkit-inline-flex;
+	display: inline-flex;
+}
+
+.caption {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+
+.caption[type="light"] {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
+.caption[type="dark"] {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+}
+
+.caption p {
+	width: initial;
+	margin: 0;
+	padding: 3px 8px;
+	text-align: center;
+}
+/*End of caption styles */
+
+
+/* Tool tip styles */
+.toolTipContainer:first-child {
+	margin-right: 33px;
+}
+
+.toolTipContainer {
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	margin-top: -12px;
+	height: 75px;
+}
+
+.toolTipContainer .toolTip {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: initial;
+	padding: 5px;
+	color: #FFF;
+	background-color: #000;
+	opacity: 0.9;
+	border-radius: 3px;
+	text-transform: initial;
+	font-size: 12px;
+	display: inline-block;
+	display: none;
+}
+
+.toolTipContainer .toolTip:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 7px 7px;
+	border-color: #000 transparent;
+	display: block;
+	top: -7px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+/* End of tool tip styles*/

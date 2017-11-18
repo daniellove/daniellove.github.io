@@ -1,0 +1,292 @@
+/* Standard drag and drop*/
+
+.dragAndDrop[layout="standard"] .backgroundBox {
+	border-radius: 6px;
+	padding-bottom: 6px;
+	padding-right: 6px;
+}
+
+.dragAndDrop[layout="standard"] .btn {
+	margin-top: 20px;
+}
+.dragAndDrop[layout="standard"] .question,
+.dragAndDrop[layout="standard"] .drop,
+.dragAndDrop[layout="standard"] .drag {
+	position: relative;
+	margin-top: 6px;
+	margin-left: 6px;
+	width: 100%;
+}
+
+.dragAndDrop[layout="standard"] .drop {
+	background-color: #FFF;
+}
+
+.dragAndDrop[layout="standard"] .drag {
+	cursor: pointer;
+}
+
+.dragAndDrop[layout="standard"] .drag.ui-draggable-dragging {
+	z-index: 999;
+	box-shadow: 2px 2px 4px #808080;
+}
+
+.dragAndDrop[layout="standard"] .dropHover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dragAndDrop[layout="standard"] .question p,
+.dragAndDrop[layout="standard"] .drop p,
+.dragAndDrop[layout="standard"] .drag p {
+	position: absolute;
+	margin: 0;
+	padding: 6px 10px;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dragAndDrop[layout="standard"] .drag p {
+	color: #FFF;
+}
+
+
+
+
+
+
+/* Column drag and drop */
+
+/*.dragAndDrop[layout="column"] .backgroundBox {
+	border-radius: 6px;
+	padding-bottom: 6px;
+	padding-right: 6px;
+}*/
+
+.dragAndDrop[layout="column"] .ddColumn:last-child {
+	margin-right: 6px;
+}
+
+.dragAndDrop[layout="column"] .btn {
+	margin-top: 20px;
+}
+.dragAndDrop[layout="column"] .drop,
+.dragAndDrop[layout="column"] .drag {
+	position: relative;
+	margin-top: 6px;
+	margin-left: 6px;
+	width: 100%;
+}
+.dragAndDrop[layout="column"] .drop:last-child,
+.dragAndDrop[layout="column"] .drag:last-child {
+	margin-bottom: 6px;
+}
+
+.dragAndDrop[layout="column"] .ddColumn > p {
+	margin: 0;
+	padding: 4px 10px;
+	text-align: center;
+}
+
+.dragAndDrop[layout="column"] .drop {
+	background-color: #FFF;
+}
+
+.dragAndDrop[layout="column"] .drag {
+	cursor: pointer;
+}
+
+.dragAndDrop[layout="column"] .drag.ui-draggable-dragging {
+	z-index: 999;
+	box-shadow: 2px 2px 4px #808080;
+}
+
+.dragAndDrop[layout="column"] .dropHover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dragAndDrop[layout="column"] .drop p,
+.dragAndDrop[layout="column"] .drag p {
+	position: absolute;
+	margin: 0;
+	padding: 6px 10px;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dragAndDrop[layout="column"] .drag p {
+	color: #FFF;
+}
+
+
+
+
+/* Scatter drag and drop*/
+
+.dragAndDrop[layout="scatter"] .btn {
+	margin-top: 20px;
+}
+
+.dragAndDrop[layout="scatter"] .dropContainer {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.dragAndDrop[layout="scatter"] .drop,
+.dragAndDrop[layout="scatter"] .drag {
+	position: relative;
+	margin-top: 6px;
+	margin-right: 6px;
+}
+
+.dragAndDrop[layout="scatter"] .drop {
+	opacity: 0.4;
+	position: absolute;
+
+}
+
+.dragAndDrop[layout="scatter"] .drag {
+	cursor: pointer;
+}
+
+.dragAndDrop[layout="scatter"] .drag.ui-draggable-dragging {
+	z-index: 999;
+	box-shadow: 2px 2px 4px #808080;
+}
+
+.dragAndDrop[layout="scatter"] .dropHover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dragAndDrop[layout="scatter"] .drop p,
+.dragAndDrop[layout="scatter"] .drag p {
+	position: absolute;
+	margin: 0;
+	padding: 6px 10px;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dragAndDrop[layout="scatter"] .drag p {
+	color: #FFF;
+}
+
+
+
+
+
+/* FIB drag and drop*/
+
+.dragAndDrop[layout="FIB"] .btn {
+	margin-top: 20px;
+}
+
+.dragAndDrop[layout="FIB"] .dropContainer {
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dragAndDrop[layout="FIB"] .dropContainer > * {
+	margin: 4px 4px 0 4px;
+}
+
+.dragAndDrop[layout="FIB"] .drop,
+.dragAndDrop[layout="FIB"] .drop {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.dragAndDrop[layout="FIB"] .drop {
+	display: inline-block;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px 1px 0px #808080;
+	-moz-box-shadow: 0px 1px 0px #808080;
+	-ms-box-shadow: 0px 1px 0px #808080;
+	-o-box-shadow: 0px 1px 0px #808080;
+	box-shadow: 0px 1px 0px #808080;
+	margin-bottom: -8px;
+	background-color: #FFF;
+}
+
+.dragAndDrop[layout="FIB"] .drag {
+	cursor: pointer;
+	float: left;
+	margin: 4px 4px 0 4px;
+}
+
+.dragAndDrop[layout="FIB"] .drag.ui-draggable-dragging {
+	z-index: 999;
+	-webkit-box-shadow: 2px 2px 4px #808080;
+	-moz-box-shadow: 2px 2px 4px #808080;
+	-ms-box-shadow: 2px 2px 4px #808080;
+	-o-box-shadow: 2px 2px 4px #808080;
+	box-shadow: 2px 2px 4px #808080;
+}
+
+.dragAndDrop[layout="FIB"] .dropHover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dragAndDrop[layout="FIB"] .drag p {
+	margin: 0;
+	padding: 0 6px;
+	width: 100%;
+	text-align: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #FFF;
+	line-height: 1.4em;
+}

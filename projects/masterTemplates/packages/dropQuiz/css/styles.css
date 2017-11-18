@@ -1,0 +1,84 @@
+.dropQuiz .dropQuestion {
+	padding: 0 5% 0 0;
+	margin-bottom: 10px;
+}
+
+.dropQuiz p {
+	padding: 4px 0;
+	margin: 0;
+}
+
+.dropQuiz .dropQuestion img {
+	margin-bottom: 10px;
+}
+
+.dropQuiz .dropDown {
+	cursor: pointer;
+	position: relative;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.dropQuiz .dropTrigger {
+	width: 100%;
+	float: left;
+}
+
+.dropQuiz .dropTrigger p {
+	width: 85%;
+	float: left;
+	border: 1px solid #ccc;
+	border-right: none;
+	-webkit-border-radius: 6px 0 0 6px;
+	-moz-border-radius: 6px 0 0 6px;
+	-ms-border-radius: 6px 0 0 6px;
+	-o-border-radius: 6px 0 0 6px;
+	border-radius: 6px 0 0 6px;
+}
+
+.dropQuiz .dropTrigger p,
+.dropQuiz .options p {
+	padding: 0 5%;
+}
+
+.dropQuiz .dropDown.open .dropTrigger p {
+	-webkit-border-radius: 6px 0 0 0;
+	-moz-border-radius: 6px 0 0 0;
+	-ms-border-radius: 6px 0 0 0;
+	-o-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+	border-bottom: none;
+	padding-bottom: 1px;
+}
+
+.dropQuiz .dropTrigger i {
+	width: 15%;
+	padding-right: 1%;
+	float: right;
+	text-align: center;
+	color: #FFF;
+}
+
+.dropQuiz .options {
+	display: none;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-top: none;
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-ms-border-radius: 0 0 6px 6px;
+	-o-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	float: left;
+}
+
+.dropQuiz *[outcome] {
+	top: initial;
+	bottom: 15px;
+	right: 15px;
+}

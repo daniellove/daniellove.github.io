@@ -1,0 +1,107 @@
+body.OTLEModalShowing {
+	overflow: hidden!important;
+}
+
+.OTLEmodalCurtains {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.OTLEmodalClose {
+	font-size: 3em;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.OTLEmodal {
+	margin: auto;
+	margin-top: 50vh;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border-radius: 5px;
+	padding: 5vh;
+	position: relative;
+}
+
+.OTLEmodal[size="S"],
+.OTLEmodal[size="M"],
+.OTLEmodal[size="L"],
+.OTLEmodal[size="XL"] {
+	background-color: #FFF;
+}
+
+.OTLEmodal[size="S"] {
+	width: 20vw;
+}
+
+.OTLEmodal[size="M"] {
+	width: 40vw;
+}
+
+.OTLEmodal[size="L"] {
+	width: 60vw;
+}
+
+.OTLEmodal[size="XL"] {
+	width: 90vw;
+}
+
+.OTLEmodal h2,
+.OTLEmodal h3,
+.OTLEmodal p,
+.OTLEmodal ul,
+.OTLEmodal ol {
+	font-family: Helvetica;
+	margin: 0;
+	padding: 0;
+	line-height: 1.1em;
+	border: none;
+}
+
+.OTLEmodal h2,
+.OTLEmodal h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.OTLEmodal h2 {
+	font-size: 2rem;
+}
+
+.OTLEmodal h3 {
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+}
+
+.OTLEmodal h2,
+.OTLEmodal p,
+.OTLEmodal ul li,
+.OTLEmodal ol li {
+	line-height: 1.5em;
+}
+
+.OTLEmodal h3,
+.OTLEmodal p {
+	padding-bottom: 0.5rem;
+}
+
+.OTLEmodal ul,
+.OTLEmodal ol {
+	padding-bottom: 0.5rem;
+}
+
+.OTLEmodal ul li,
+.OTLEmodal ol li {
+	margin-left: 30px;
+}

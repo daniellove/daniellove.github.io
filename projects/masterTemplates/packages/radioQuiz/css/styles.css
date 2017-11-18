@@ -1,0 +1,74 @@
+.radioQuiz .headings * {
+	font-weight: bold;
+	text-align: center;
+}
+
+.radioQuiz .headings > *:last-child p {
+	text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+	.radioQuiz .headings p {
+		font-size: 0.9em;
+	}
+}
+
+.radioButtons * {
+	height: 100%;
+}
+
+.radioButtons .radioBox {
+	height: 80%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	height: 24px;
+	width: 24px;
+	margin: auto;
+	cursor: pointer;
+	position: relative;
+}
+
+.radioButtons .radioBox[selected]:after {
+	content: '';
+	background-color: #888;
+	width: 66%;
+	height: 66%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.radioQuiz p {
+	margin: 4px 0;
+}
+
+.radioQuiz .reset,
+.radioQuiz .checkAnswer {
+	margin: 10px 0 0 0;
+}
+
+.radioButtons *[outcome] {
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: initial;
+	right: 0;
+	-webkit-transform: translate(100%, -50%);
+	-moz-transform: translate(100%, -50%);
+	-ms-transform: translate(100%, -50%);
+	-o-transform: translate(100%, -50%);
+	transform: translate(100%, -50%);
+}

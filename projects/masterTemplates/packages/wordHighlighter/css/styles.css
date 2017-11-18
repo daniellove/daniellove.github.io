@@ -1,0 +1,19 @@
+ .wordHighlighter span {
+	padding: 5px 10px;
+	border-radius: 20px;
+	border: 2px solid;
+	cursor: pointer;
+}
+
+ .wordHighlighter span[colour="blue"] {
+	border-color: #66b3ff;
+}
+
+ .wordHighlighter span[colour="yellow"] {
+	border-color: #ffd966;
+}
+
+ .wordHighlighter span[colour="pink"] {
+	border-color: #F57C9A;
+}
+

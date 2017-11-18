@@ -243,9 +243,13 @@ nav,
 	transform: translateY(-50%);
 }
 
-#projects #projectSlider > div {
+#projects #projectSlider .project {
 	float: left;
-	transition: all 0.6s ease-in-out;
+	-webkit-transition: transform 0.6s ease-in-out, width 0.6s ease-in-out, padding 0.6s ease-in-out;
+	-moz-transition: transform 0.6s ease-in-out, width 0.6s ease-in-out, padding 0.6s ease-in-out;
+	-ms-transition: transform 0.6s ease-in-out, width 0.6s ease-in-out, padding 0.6s ease-in-out;
+	-o-transition: transform 0.6s ease-in-out, width 0.6s ease-in-out, padding 0.6s ease-in-out;
+	transition: transform 0.6s ease-in-out, width 0.6s ease-in-out, padding 0.6s ease-in-out;
 	position: relative;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -253,7 +257,51 @@ nav,
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
+	overflow: hidden;
+	cursor: pointer;
 }
+
+#projects #projectSlider .project.showing {
+	box-shadow: 2px 2px 6px #8b8e90;
+}
+
+#projects #projectSlider .project img {
+	display: block;
+}
+
+#projects #projectSlider .project .caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10% 4%;
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+
+#projects #projectSlider .project .caption p {
+	color: #FFF;
+}
+
+#projects #projectSlider .project.showing .caption {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+}
+
+
 
 #projects #window .leftThumb,
 #projects #window .rightThumb {

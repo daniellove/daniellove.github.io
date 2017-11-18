@@ -1,0 +1,40 @@
+.videoModalButtons {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 204px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.videoModalButtons .OTLEmodalButton {
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+.videoModalButtons .OTLEmodalButton:nth-child(1),
+.videoModalButtons .OTLEmodalButton:nth-child(2) {
+	margin-bottom: 4px;
+}
+
+.videoModalButtons .OTLEmodalButton:nth-child(2n-1) {
+	margin-right: 4px;
+}
+
+.videoModalButtons .OTLEmodalButton:nth-child(2n-1) {
+	margin-right: 4px;
+}
+
+.videoModalButtons .OTLEmodalButton:nth-child(1) {
+	border-radius: 100% 0 0 0;
+}
+.videoModalButtons .OTLEmodalButton:nth-child(2) {
+	border-radius: 0 100% 0 0;
+}
+.videoModalButtons .OTLEmodalButton:nth-child(3) {
+	border-radius: 0 0 0 100%;
+}
+.videoModalButtons .OTLEmodalButton:nth-child(4) {
+	border-radius: 0 0 100% 0;
+}

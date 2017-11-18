@@ -1,0 +1,78 @@
+.multiQuiz > .row:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.multiQuiz .heading {
+	font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+	.multiQuiz .heading {
+		font-size: 0.9em;
+	}
+}
+
+.multiQuiz .option {
+	clear: both;
+}
+
+.multiQuiz .multiBox {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	height: 24px;
+	width: 24px;
+	margin: auto;
+	margin-left: 20px;
+	cursor: pointer;
+	position: relative;
+	float: left;
+}
+
+.multiQuiz .multiBox[selected]:after {
+	content: '';
+	background-color: #888;
+	width: 66%;
+	height: 66%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.multiQuiz .option p {
+	float: right;
+	padding-left: 4px;
+	width: 80%;
+}
+
+.multiQuiz p {
+	margin: 4px 0;
+}
+
+.multiQuiz .reset,
+.multiQuiz .checkAnswer {
+	margin: 10px 0 0 0;
+}
+
+.multiQuiz *[outcome] {
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: -2px;
+	-webkit-transform: translate(-100%, -50%);
+	-moz-transform: translate(-100%, -50%);
+	-ms-transform: translate(-100%, -50%);
+	-o-transform: translate(-100%, -50%);
+	transform: translate(-100%, -50%);
+}

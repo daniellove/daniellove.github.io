@@ -1,0 +1,64 @@
+.clickTrigger {
+	position: relative;
+}
+
+.clickTrigger .clickTrigger_showing {
+	position: absolute;
+	border: 1px solid #cecece;
+	-webkit-box-shadow: 2px 2px 4px #cecece;
+	-moz-box-shadow: 2px 2px 4px #cecece;
+	box-shadow: 2px 2px 4px #cecece;
+	height: auto;
+	border-radius: 4px;
+	display: none;
+	background-color: #FFF;
+	z-index: 999;
+}
+
+.clickTrigger .clickTrigger_showing p {
+	padding: 10px;
+	margin: 0;
+	color: #333333;
+}
+
+.clickTrigger .clickTrigger_top {
+	-webkit-transform: translate(-50%, -100%);
+	-moz-transform: translate(-50%, -100%);
+	-ms-transform: translate(-50%, -100%);
+	-o-transform: translate(-50%, -100%);
+	transform: translate(-50%, -100%);
+	top: -4px;
+	left: 50%;
+}
+
+.clickTrigger .clickTrigger_bottom,
+.clickTrigger .clickTrigger_undefined {
+	-webkit-transform: translate(-50%, 100%);
+	-moz-transform: translate(-50%, 100%);
+	-ms-transform: translate(-50%, 100%);
+	-o-transform: translate(-50%, 100%);
+	transform: translate(-50%, 100%);
+	bottom: -4px;
+	left: 50%;
+}
+
+.clickTrigger .clickTrigger_right {
+	-webkit-transform: translate(100%, -50%);
+	-moz-transform: translate(100%, -50%);
+	-ms-transform: translate(100%, -50%);
+	-o-transform: translate(100%, -50%);
+	transform: translate(100%, -50%);
+	top: 50%;
+	right: -4px;
+}
+
+.clickTrigger .clickTrigger_left {
+	-webkit-transform: translate(-100%, -50%);
+	-moz-transform: translate(-100%, -50%);
+	-ms-transform: translate(-100%, -50%);
+	-o-transform: translate(-100%, -50%);
+	transform: translate(-100%, -50%);
+	margin-right: 10px;
+	top: 50%;
+	left: -4px;
+}

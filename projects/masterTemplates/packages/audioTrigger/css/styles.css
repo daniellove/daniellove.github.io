@@ -1,0 +1,3 @@
+.audioTrigger:not(img) {
+	border-bottom: 1px dashed #333;
+}

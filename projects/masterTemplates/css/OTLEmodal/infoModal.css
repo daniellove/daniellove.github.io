@@ -1,0 +1,103 @@
+.OTLEmodal.infoModal h2 {
+	text-align: center;
+	font-size: 4rem;
+	line-height: 2em;
+	color: #a58a3d;
+	margin-top: .6em;
+}
+
+.OTLEmodal.infoModal h3 {
+	text-transform: none;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	color: #595e5d;
+	line-height: 1.6em;
+	font-size: 1.7em;
+	font-weight: normal;
+}
+
+.OTLEmodal.infoModal p {
+	color: #9ea7a3;
+	font-size: 1.5em;
+}
+
+.OTLEmodal.infoModal .fa {
+	text-transform: none;
+	color: #444;
+	line-height: 2em;
+	font-size: 4.5em;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.OTLEmodal.infoModal .viewerButtons .fa {
+	cursor: pointer;
+	color: #a58a3d;
+}
+
+.OTLEmodal.infoModal .viewerWindow {
+	padding: 0 6%;
+}
+
+.OTLEmodal.infoModal .viewerWindow .fa {
+	line-height: 1.5em;
+	font-size: 14.5em;
+	color: #a58a3d;
+}
+
+.OTLEmodal.infoModal .viewerItem {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.OTLEmodal.infoModal h5 {
+	margin: 0;
+	color: #444;
+	text-align: center;
+	padding-bottom: 1em;
+	font-size: 1.5em;
+}
+
+.OTLEmodal.infoModal .viewerItem h5 {
+	color: #a58a3d;
+}
+
+.OTLEmodal.infoModal .shading	{
+	background-color: #efece1;
+	border-radius: 5px 5px 0 0;
+    padding: 5vh;
+    margin-bottom: 4em;
+}
+
+.OTLEmodal.infoModal .baseShadding {
+	background-color: #FFF;
+	border-radius: 5px;
+	padding-bottom: 45px;
+}
+
+.OTLEmodal.infoModal .col-sm-2 {
+	padding-left: 20px;
+}
+
+.OTLEmodal.infoModal .col3padding {
+	padding-right: 6vw;
+}
+
+.OTLEmodal.infoModal .col-sm-3 {
+	padding-left: 6vw;
+}
+
+.OTLEmodal.infoModal .col-sm-4 {
+	padding-left: 100px;
+}
+
+.OTLEmodal.infoModal {
+	padding: 0;
+}

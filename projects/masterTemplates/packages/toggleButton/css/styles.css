@@ -1,0 +1,8 @@
+.toggleInfo.well {
+	margin: 0;
+	display: none;
+}
+
+.toggleInfo.well > *:last-child {
+	margin-bottom: 0;
+}
