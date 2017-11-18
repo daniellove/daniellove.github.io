@@ -204,7 +204,7 @@ nav,
 
 @media screen and (min-width: 568px) {
 	#container p {
-		text-align: justify;
+		/*text-align: justify;*/
 	}
 }
 
@@ -291,7 +291,7 @@ nav,
 
 #projects #projectSlider .project .caption p {
 	color: #FFF;
-	text-align: left!important;
+	/*text-align: left!important;*/
 	font-size: 0.8em;
 	line-height: 1.1em;
 }
