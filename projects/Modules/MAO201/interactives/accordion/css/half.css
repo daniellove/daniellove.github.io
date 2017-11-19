@@ -1,0 +1,70 @@
+.accordion[cssFile="half"] {
+	width: 800px;
+	margin: 0 0 33px 33px;
+}
+
+.accordion[cssFile="half"] .tabButton {
+	margin: 4px 0 0 0;
+	padding: 10px;
+	border-radius: 2px 2px 0 0;
+	font-size: 1.3em;
+	line-height: 1em;
+	background-color: #0098bc;
+	cursor: pointer;
+	color: #FFF;
+	text-transform: initial;
+	vertical-align: top;
+	width: 360px;
+	float: left;
+}
+
+.accordion[cssFile="half"] .tabMargin:not(.tabContent) {
+	margin-right: 4px;
+}
+
+.accordion[cssFile="half"] .tabOuter {
+	overflow: hidden;
+	border: 1px solid #0098bc;
+	border-radius: 0 0 2px 2px;
+	width: 378px;
+	float: left;
+}
+
+.accordion[cssFile="half"] .tabContent {
+	vertical-align: top;
+}
+
+.accordion[cssFile="half"] .tabContent p {
+	margin: 0;
+	line-height: 1.4em;
+	padding: 10px;
+}
+
+.accordion[cssFile="half"] .image {
+	display: block;
+	width: 378px;
+}
+.accordion[cssFile="half"] .imageContainer {
+	position: relative;
+	width: 338px;
+	background-color: #000;
+	padding-left: 40px;
+	padding-top: 10px;
+	height: 320px;
+}
+
+.accordion[cssFile="half"] .imageContainer:after {
+	content: '';
+	width: 378px;
+	height: 20px;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.accordion[cssFile="half"] .imageContainer img {
+	display: block;
+	width: 298px;
+}

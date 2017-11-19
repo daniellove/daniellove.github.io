@@ -1,0 +1,119 @@
+/*SEARCH BAR STYLING*/
+
+.searchContainer {
+	margin-left:33px;
+	width:650px;
+	height:50px;
+	background-color:#5E5E5E;
+	margin-bottom:-33px;
+	border-radius:5px 5px 0 0;
+	padding-top:6px;
+}
+.searchContainer .searchInput,
+.searchContainer .optionText,
+.searchContainer .searchOptions {
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 20px;
+	color: #FFF;
+}
+.searchContainer .searchInput {
+	height:25px;
+	width: 250px;
+	border-radius: 5px;
+	margin-top: 5px;
+	color: #000;
+	padding-left: 10px;
+}
+.searchContainer .optionText{
+	margin-top: 12px;
+}
+
+.searchContainer .searchOptions p {
+	display: inline-block;
+}
+
+::-webkit-input-placeholder {
+   color: #a9a9a9;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #a9a9a9;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #a9a9a9;  
+}
+
+:-ms-input-placeholder {  
+   color: #a9a9a9;  
+}
+
+/*END OF SEARCH BAR*/
+
+/*TABLE STYLING*/
+
+.searchTable {
+	font-family: Helvetica;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 33px;
+	width: 650px;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #a9a9a9;
+}
+.searchTable .heading {
+	color: #004029;
+	font-weight: bold;
+	background-color: #FFFFFF;
+}
+.searchTable th {
+	padding: 15px 10px 10px 15px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #454545;
+	border-top: 1px solid #a9a9a9;
+	border-bottom: 1px solid #a9a9a9;
+}
+.searchTable tbody {
+	background-color: #e8edff;
+}
+.searchTable td {
+	padding: 13px;
+	color: #454545;
+	min-width: 150px;
+}
+.searchTable .subheading {
+	background-color: #EAEAEA; 
+}
+.searchTable tr:not(.heading):not(.subheading) {
+	background: #DAE6F2;
+	cursor: hand;
+	cursor: pointer;
+	border-bottom: 1px dashed #fff;
+}
+
+.searchTable  tr:not(.heading):not(.subheading):hover {
+	color: #1B1B1B;
+	background-color: #C2D3E5;
+}
+.searchTable .playingAudio {
+	background-color: #D4EAD6!important; 
+}
+
+.searchTable .hidden {
+	display: none;
+}
+
+.searchTable .infoTrigger {
+	background-color: inherit;
+	border-bottom: inherit;
+}
+
+.searchTable .tableNote {
+	font-size: 0.8em;
+	font-style: italic;
+	line-height: 0;
+}
+/*END OF TABLE STYLING*/

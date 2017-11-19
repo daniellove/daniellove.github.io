@@ -1,0 +1,35 @@
+.typeTheAnswer[ttaCssFile="standard"] {
+	position: relative;
+	width: 450px;
+}
+
+.typeTheAnswer[ttaCssFile="standard"] .ttaInputBox {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.typeTheAnswer[ttaCssFile="standard"] .ttaInputBox {
+	position: relative;
+	border: none;
+	width: 90%;
+	height: 100%;
+	padding: 0 5%;
+	z-index: 10;
+}
+
+.typeTheAnswer[ttaCssFile="standard"] .ttaInputBox:focus {
+    outline: none;
+}
+
+.typeTheAnswer[ttaCssFile="standard"] .ttaHidden {
+	display: none;
+}
+
+.typeTheAnswer[ttaCssFile="standard"] .ttaOutcome {
+	position: absolute;
+	top: 0;
+	width: 23px;
+	z-index: 999;
+	right: 0;
+}

@@ -1,0 +1,119 @@
+.typeTheAnswer[ttaCssFile="scatter5A"] {
+	position: relative;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .backgroundImage {
+	width: 550px;
+	margin-left: -57px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaInputs {
+	width: 430px;
+	height: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaInputs,
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaQuestions {
+	position: relative;
+	float: left;
+	z-index: 999;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaQuestions {
+	list-style: upper-alpha;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaQuestions li {
+	position: relative;
+	margin-bottom: 30px;
+	width: 360px;
+	padding-left: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .infoTrigger {
+	background-color: transparent;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaQuestions .hiddenInfo {
+	background-color: transparent;
+	width: 360px;
+	left: 10px;
+	top: -16px;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaInputBox {
+	border: none;
+	width: 90%;
+	height: 100%;
+	padding: 0 5%;
+	z-index: 10;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaInputBox:focus {
+    outline: none;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaHidden {
+	display: none;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaOutcome {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	width: 23px;
+	z-index: 999;
+}
+
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(1) {
+	top: 0px;
+	left: 200px;
+}
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(2) {
+	top: 45px;
+	left: 295px;
+}
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(3) {
+	top: 120px;
+	left: 365px;
+}
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(4) {
+	top: 190px;
+	left: 77px;
+}
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(5) {
+	top: 200px;
+	left: 200px;
+}
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(6) {
+	top: 260px;
+	left: 104px;
+}
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(7) {
+	top: 280px;
+	left: 12px;
+}
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(8) {
+	top: 240px;
+	left: 60px;
+}
+.typeTheAnswer[ttaCssFile="scatter5A"] .ttaBlock:nth-child(9) {
+	top: 340px;
+	left: 200px;
+}

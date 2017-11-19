@@ -1,0 +1,96 @@
+.dragAndDrop[ddCssFile="paragraph"] {
+	position: relative;
+	margin-bottom: 33px;
+	background-color: #fff;
+	padding:15px;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .dragContainer,
+.dragAndDrop[ddCssFile="paragraph"] .dropContainer,
+.dragAndDrop[ddCssFile="paragraph"] .dragBox {
+	float: left;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .dragContainer,
+.dragAndDrop[ddCssFile="paragraph"] .dropContainer {
+	position: relative;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .dragContainer {
+	width: 	100%;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .dropContainer {
+	clear: 	both;
+	padding-top: 33px;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .dragBox,
+.dragAndDrop[ddCssFile="paragraph"] .dropBox {
+	position: relative;
+	width: 120px;
+	height: 30px;
+	border-radius: 3px;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .dragBox {
+	margin: 0 10px 0 0;
+	background-color:#0e4e96;
+	color: #FFF;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .dropBox {
+	display: inline-block;
+	background-color: #f1f1f1;
+	margin-bottom: -10px;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .dragBox p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 90%;
+	margin: 0 0 0 0!important;
+	line-height: 15px;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .hoverClass {
+	background-color: #BBB;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .ui-draggable-dragging {
+	box-shadow: 2px 2px 10px #BBB;
+	z-index: 999;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .outcome {
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	z-index: 2;
+	width: 27px;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .ddReset,
+.dragAndDrop[ddCssFile="paragraph"] .ddUndo,
+.dragAndDrop[ddCssFile="paragraph"] .ddCheck {
+	margin: 10px;
+	float: left;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .ddUndo,
+.dragAndDrop[ddCssFile="paragraph"] .ddCheck {
+	margin-left: 0;
+}
+
+.dragAndDrop[ddCssFile="paragraph"] .hidden {
+	display: none;
+}

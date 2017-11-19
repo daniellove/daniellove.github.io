@@ -1,0 +1,159 @@
+.dragAndDrop[ddCssFile="audio"] {
+	position: relative;
+	width: 1010px;
+	margin-bottom: 33px;
+}
+
+.dragAndDrop[ddCssFile="audio"] .questionsContainer,
+.dragAndDrop[ddCssFile="audio"] .dropContainer,
+.dragAndDrop[ddCssFile="audio"] .dragContainer,
+.dragAndDrop[ddCssFile="audio"] .ddReset,
+.dragAndDrop[ddCssFile="audio"] .ddUndo,
+.dragAndDrop[ddCssFile="audio"] .ddCheck {
+	float: left;
+}
+
+.dragAndDrop[ddCssFile="audio"] .questionsContainer,
+.dragAndDrop[ddCssFile="audio"] .dropContainer {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dragAndDrop[ddCssFile="audio"] .questionsContainer {
+	padding: 10px 0 0 10px;
+	width: 120px;
+	border-radius: 10px 0 0 10px;
+}
+
+.dragAndDrop[ddCssFile="audio"] .dropContainer,
+.dragAndDrop[ddCssFile="audio"] .dragContainer {
+	width: 230px;
+}
+
+.dragAndDrop[ddCssFile="audio"] .dropContainer {
+	padding: 10px 10px 0 10px;
+	border-radius: 0 10px 10px 0;
+}
+
+.dragAndDrop[ddCssFile="audio"] .dragContainer {
+	padding: 10px 0 0 10px;
+}
+
+.dragAndDrop[ddCssFile="audio"] .smallText {
+	width: 320px;
+}
+
+.dragAndDrop[ddCssFile="audio"] .questionBox,
+.dragAndDrop[ddCssFile="audio"] .dropBox,
+.dragAndDrop[ddCssFile="audio"] .dragBox {
+	position: relative;
+	height: 120px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.dragAndDrop[ddCssFile="audio"] .dropBox,
+.dragAndDrop[ddCssFile="audio"] .dragBox {
+	background-color: #FFF;
+}
+
+.dragAndDrop[ddCssFile="audio"] .questionBox img,
+.dragAndDrop[ddCssFile="audio"] .dragBox img {
+	max-height: 100%;
+	max-width: 100%;
+	border: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.dragAndDrop[ddCssFile="audio"] .dragBox {
+	cursor: pointer;
+}
+
+.dragAndDrop[ddCssFile="audio"] .dragBox:not(.noImage) {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.dragAndDrop[ddCssFile="audio"] .dragBox.noImage.ui-draggable-disabled {
+	background-color: transparent;
+}
+
+.dragAndDrop[ddCssFile="audio"] .dragBox p,
+.dragAndDrop[ddCssFile="audio"] .dropBox p {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 27px;
+	line-height: 30px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.dragAndDrop[ddCssFile="audio"] .dragBox:not(.noImage) p {
+	font-size: 18px;
+	background-color: rgba(255, 255, 255, 0.6);
+	color: rgba(0, 0, 0, 0.8)
+}
+
+.dragAndDrop[ddCssFile="audio"] .dragBox.noImage.ui-draggable-disabled p {
+	background-color: transparent;
+	-webkit-transform: translateY(10%);
+	-moz-transform: translateY(10%);
+	-ms-transform: translateY(10%);
+	-o-transform: translateY(10%);
+	transform: translateY(10%);
+}
+
+.dragAndDrop[ddCssFile="audio"] .dropBox.dropped p {
+	-webkit-transform: translateY(-110%);
+	-moz-transform: translateY(-110%);
+	-ms-transform: translateY(-110%);
+	-o-transform: translateY(-110%);
+	transform: translateY(-110%);
+}
+
+.dragAndDrop[ddCssFile="audio"] .hoverClass {
+	background-color: #BBB;
+}
+
+.dragAndDrop[ddCssFile="audio"] .ui-draggable-dragging {
+	box-shadow: 2px 2px 10px #BBB;
+	z-index: 999;
+}
+
+.dragAndDrop[ddCssFile="audio"] .outcome {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	width: 27px;
+}
+
+.dragAndDrop[ddCssFile="audio"] .ddReset,
+.dragAndDrop[ddCssFile="audio"] .ddUndo,
+.dragAndDrop[ddCssFile="audio"] .ddCheck {
+	margin: 10px;
+}
+
+.dragAndDrop[ddCssFile="audio"] .ddUndo,
+.dragAndDrop[ddCssFile="audio"] .ddCheck {
+	margin-left: 0;
+}
+
+
+.dragAndDrop[ddCssFile="audio"] .hidden {
+	display: none;
+}

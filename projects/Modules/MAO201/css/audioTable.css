@@ -1,0 +1,187 @@
+/* Generic table */
+.audioTable {
+	margin: 0 0 33px 33px;
+}
+.audioTable td {
+	text-align: center;
+	background-color: #86CDDF;
+	color: #094E5F;
+	width: 46px;
+	height: 43px;
+	cursor: pointer;
+}
+.audioTable th {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	width: 46px;
+	height: 43px;
+	border-radius: 10px 10px 0 0;
+	background-color: #0098BC;
+	color: #FFF;
+}
+.audioTable td:not(.blank):not(.greyed):not(.noClick):hover {
+	-webkit-box-shadow: inset 0 0 5px #333333;
+	-moz-box-shadow: inset 0 0 5px #333333;
+	box-shadow: inset 0 0 5px #333333;
+}
+.audioTable tr .tdActive {
+	background-color: #FFF!important;
+	color: #0098BC;
+	-webkit-box-shadow: inset 0 0 5px #333333;
+	-moz-box-shadow: inset 0 0 5px #333333;
+	box-shadow: inset 0 0 5px #333333;
+}
+
+.audioTable .greyed {
+	background-color: #CECECE;
+	cursor: initial;
+}
+
+.audioTable .blank {
+	background: transparent;
+	cursor: initial;
+}
+
+.audioTable .infoTrigger {
+	border-bottom: none;
+}
+
+
+/* VOCAB TABLES */
+.audioTable[folder="vocab/generic"] th,
+.audioTable[folder="vocab/experts"] th,
+.audioTable[folder="vocab/examples"] th,
+.audioTable[folder="vocab/activity"] th {
+	border-radius: 0;
+	width: 370px;
+	line-height: 1.4;
+	font-weight: normal;
+	font-size: initial;
+	vertical-align: middle;
+}
+.audioTable[folder="vocab/generic"] td,
+.audioTable[folder="vocab/experts"] td,
+.audioTable[folder="vocab/examples"] td,
+.audioTable[folder="vocab/activity"] td {
+	padding: 5px;
+	width: 160px;
+	border-radius: 10px 0 0 10px;
+	vertical-align: middle;
+}
+
+.audioTable[folder="vocab/examples"] td {
+	background-color: #ffc498;
+	color: #cc5a02;
+}
+.audioTable[folder="vocab/examples"] th {
+	background-color: #D65D00;
+}
+.audioTable[folder="vocab/examples"] tr .tdActive {
+	color: #e06100;
+}
+
+.audioTable[folder="vocab/experts"] td {
+	background-color: #f7b7b9;
+	color: #7A0F12;
+}
+.audioTable[folder="vocab/experts"] th {
+	background-color: #7A0F12;
+}
+.audioTable[folder="vocab/experts"] tr .tdActive {
+	color: #9c1317;
+}
+.audioTable[folder="vocab/activity"] td,
+.audioTable[folder="vocab/activity"] th {
+	height: 35px;
+}
+.audioTable[folder="vocab/activity"] td {
+	background-color: #a7b5bd;
+	color: #656d72;
+	width: 150px;
+}
+.audioTable[folder="vocab/activity"] th {
+	background-color: #656d72;
+	width: 240px;
+}
+.audioTable[folder="vocab/activity"] tr .tdActive {
+	color: #818c92;
+}
+/* End of main vocab tables */
+
+/* Three column vocab table */
+.audioTable[folder="vocab/"] th {
+	border-radius: 0;
+	line-height: 1.4;
+	font-weight: normal;
+	font-size: initial;
+}
+.audioTable[folder="vocab/"] th,
+.audioTable[folder="vocab/"] td {
+	width: 180px;
+}
+.audioTable[folder="vocab/"] tr:first-child th:first-child {
+	background-color: #86CDDF;
+	color: #094E5F;
+	border-radius: 10px 0 0 0px;
+}
+.audioTable[folder="vocab/"] tr:first-child th {
+	font-weight: bold;
+}
+/* End of three column vocab table */
+
+.audioTable i {
+	font-size: 0.8em;
+}
+
+/* vocab table with images */
+.audioTable[folder="vocab/imageTable"] td {
+	width: 182px;
+	position: relative;
+	background-color: #86CDDF;
+	color: #094E5F;
+	height: 53px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.audioTable[folder="vocab/imageTable"] th {
+	background-color: #DEDEDE;
+	height: 182px;
+	cursor: pointer;
+	position: relative;
+	border-radius: 0;
+}
+
+.audioTable[folder="vocab/imageTable"] th:hover {
+	cursor: initial;
+}
+
+.audioTable[folder="vocab/imageTable"] img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.audioTable[folder="vocab/imageTable"] th p {
+	color: #FFF;
+	position: relative;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0;
+	line-height: 50px;
+}
+/* End of vocab table with images */
+
+.audioTable .noClick {
+	cursor: initial!important;
+}
+
+.audioTable[folder="vocab/imageTable"] .infoTrigger span {
+	border-bottom:dashed 1px #000;"
+}

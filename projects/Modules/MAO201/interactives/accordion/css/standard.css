@@ -1,0 +1,79 @@
+.accordion[cssFile="standard"] {
+	width: 550px;
+	margin: 0 0 33px 33px;
+}
+
+.accordion[cssFile="standard"] .tabButton {
+	margin: 4px 0 0 0;
+	padding: 10px;
+	border-radius: 2px 2px 0 0;
+	font-size: 1.3em;
+	line-height: 1em;
+	background-color: #0098bc;
+	cursor: pointer;
+	color: #FFF;
+	text-transform: initial;
+}
+
+.accordion[cssFile="standard"] .tabOuter {
+	overflow: hidden;
+	border: 1px solid #0098bc;
+	border-radius: 0 0 2px 2px;
+}
+
+.accordion[cssFile="standard"] .tabOuter.open {
+	overflow: initial;
+}
+
+.accordion[cssFile="standard"] .tabContent {
+	position: relative;
+	padding: 10px;
+}
+
+.accordion[cssFile="standard"] p {
+	margin: 0 0 23px 0;
+	line-height: 1.4em;
+}
+
+.accordion[cssFile="standard"] .bullet-list {
+	margin-bottom: 0;
+}
+
+.accordion[cssFile="standard"] .bullet-list li {
+	margin: 0 0 10px 30px;
+}
+
+.accordion[cssFile="standard"] .outsideVideo {
+	position: absolute;
+	top: 100px;
+	left: 100%;
+	margin-left: 10px;
+}
+
+.accordion[cssFile="standard"] table:not(.contentTable):not(.audioTable) {
+	border-collapse: collapse;
+}
+
+.accordion[cssFile="standard"] table:not(.contentTable):not(.audioTable) td {
+	border: 1px solid #000;
+	width: 130px;
+	position: relative;
+   padding-bottom: 28px;
+}
+
+.accordion[cssFile="standard"] table:not(.contentTable):not(.audioTable) td img {
+	width: 75px;
+	margin-left: 32px;
+	display: block;
+}
+.accordion[cssFile="standard"] table:not(.contentTable):not(.audioTable) td span {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #FFF;
+    padding: 0 5px 2px 5px;
+    width: 120px;
+    font-size: 0.9em;
+    text-align: center;
+}

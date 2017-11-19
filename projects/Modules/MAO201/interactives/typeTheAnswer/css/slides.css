@@ -1,0 +1,171 @@
+.ttaSlides {
+	margin: 0 auto;
+}
+.ttaSlides,
+.typeTheAnswer[ttaCssFile="slides"] {
+	width: 350px;
+}
+
+.ttaSlides {
+	overflow: hidden;
+	position: relative;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] {
+	position: relative;
+	display: inline-block;
+	background-color: #6281A2;
+	border-radius: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaBlock:first-child {
+	padding-top: 20px;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaBlock {
+	position: relative;
+	display: block;
+	padding: 0 20px 20px 20px;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaQuestionHead,
+.typeTheAnswer[ttaCssFile="slides"] .ttaQuestion {
+	margin: 0;
+	line-height: 1.4;
+	color: #ECECEC;
+}
+.typeTheAnswer[ttaCssFile="slides"] .ttaQuestionHead {
+	font-weight: bold;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaInputBox {
+	position: relative;
+	border: none;
+	z-index: 10;
+	border-radius: 5px;
+	height: 24px;
+	width: 310px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaInputBox:focus {
+    outline: none;
+}
+
+.typeTheAnswer[ttaCssFile="slides"]  .ttaAccentContainer {
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);	
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaAccent {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color:  rgba(0,0,0,0.2);
+	color: #FFF;
+	position: relative;
+	cursor: pointer;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaAccent:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaAccent:first-child {
+	border-radius: 0 0 0 5px;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaAccent:last-child {
+	border-radius: 0 0 5px 0;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaAccent p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaHidden {
+	display: none;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaOutcome {
+	position: absolute;
+	bottom: 40px;
+	right: 10px;
+	width: 23px;
+	z-index: 999;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaButtonBlock {
+	height: 40px;
+}
+
+.typeTheAnswer[ttaCssFile="slides"]  .ttaReset,
+.typeTheAnswer[ttaCssFile="slides"]  .ttaCheck {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaReset {
+	margin-right: 20px;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaBack,
+.typeTheAnswer[ttaCssFile="slides"] .ttaNext {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaBack:hover,
+.typeTheAnswer[ttaCssFile="slides"] .ttaNext:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaBack:hover p,
+.typeTheAnswer[ttaCssFile="slides"] .ttaNext:hover p {
+	opacity: 0.8;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaBack {
+	left: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaNext {
+	right: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="slides"] .ttaBack p,
+.typeTheAnswer[ttaCssFile="slides"] .ttaNext p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #FFF;
+}
+

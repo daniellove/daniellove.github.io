@@ -1,0 +1,87 @@
+/* RESET STYLES - DO NOT DELETE
+--------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, article, aside, canvas,
+details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* { box-sizing:initial!important;}
+
+body {
+	font-family: Helvetica;
+	color: #2a2a2a;
+	padding-top: 80px;
+	background-color: #FFF;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0098BC;
+	float: left;
+	padding: 10px 0px 6px;
+}
+
+h2 {
+	font-size: 19px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 33px;
+	color: #004C5E;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 24px;
+	color: #2a2a2a;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 33px;
+	margin-bottom: 23px;
+}
+
+/*------------------- CONTAINER ---------------------*/
+
+#container {
+	width: 930px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+
+/*--------------------MEDIA QUIERIES------------------*/
+
+@media screen and (max-width: 959px) {
+
+	#container {
+	max-width: 100%;
+	}
+
+	.content {
+		max-width: 95%;
+	}
+
+}
+
+.content {
+	width: 930px;
+	padding-top: 60px;
+	overflow: hidden;
+	width: 877px;
+	position: relative;
+	/*background-image: url('../images/page-line.png');*/
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+	padding-left: 53px;
+}

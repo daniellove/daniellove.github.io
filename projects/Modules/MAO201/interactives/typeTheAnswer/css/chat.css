@@ -1,0 +1,113 @@
+.typeTheAnswer[ttaCssFile="chat"] {
+	position: relative;
+	width: 450px;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaCard {
+	width: 100%;
+	background-color: #6281A2;
+	clear: both;
+	margin-bottom: 23px;
+	border-radius: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaLeftBox,
+.typeTheAnswer[ttaCssFile="chat"] .ttaRightBox {
+	width: 100%;
+	clear: both;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaLeftBox > div{
+	float: left;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaRightBox > div{
+	float: right;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaBlock {
+	position: relative;
+	display: block;
+	margin: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaCircleImage {
+	border-radius: 50%;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaLeftBubble,
+.typeTheAnswer[ttaCssFile="chat"] .ttaRightBubble,
+.typeTheAnswer[ttaCssFile="chat"] .ttaInputBox {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaLeftBubble,
+.typeTheAnswer[ttaCssFile="chat"] .ttaRightBubble {
+	position: relative;
+	width: 250px;
+	height: 70px;
+	padding: 0px;
+	background: #FFFFFF;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaLeftBubble:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 9px 14px 9px 0;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	left: -10px;
+	bottom: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaRightBubble:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 9px 0 9px 14px;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	right: -10px;
+	bottom: 10px;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaInputBox {
+	position: relative;
+	border: none;
+	width: 90%;
+	height: 100%;
+	padding: 0 5%;
+	z-index: 10;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaInputBox:focus {
+    outline: none;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaRightBubble .ttaInputBox{
+	text-align: right;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaHidden {
+	display: none;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaOutcome {
+	position: absolute;
+	top: 0;
+	width: 23px;
+	z-index: 999;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaLeftBox .ttaOutcome {
+	right: 0;
+}
+
+.typeTheAnswer[ttaCssFile="chat"] .ttaRightBox .ttaOutcome {
+	left: 0;
+}

@@ -1,0 +1,19 @@
+/* Images */
+.sideImage {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 280px;
+}
+
+.image {
+	width: 550px;
+}
+.smImage {
+	width: 400px;
+}
+.inlineIcon {
+	display: inline-block;
+	height: 18px;
+	margin-bottom: -4px;
+}

@@ -1,0 +1,114 @@
+.slideshow[slideCssFile="audioSlideshow"] { 
+    position: relative;   
+	margin-left: 70px;
+	margin-bottom: 82px;
+    width: 550px;
+    height: 400px;
+    background-color: #FFF;
+    box-shadow: 3px 3px 10px #B5B5B5;
+}
+
+.slideshow[slideCssFile="audioSlideshow"] > .slide { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow[slideCssFile="audioSlideshow"] > .slide img {
+	width: 100%;
+}
+
+.slideshow[slideCssFile="audioSlideshow"] .slideRef {
+	position: absolute;
+    width: 100%;
+	bottom: 10px;
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
+	opacity: 0.6;
+}
+
+.slideshow[slideCssFile="audioSlideshow"] .navLeft,
+.slideshow[slideCssFile="audioSlideshow"] .navRight {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+}
+
+.slideshow[slideCssFile="audioSlideshow"] .navLeft {
+	left: 0;
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.slideshow[slideCssFile="audioSlideshow"] .navRight {
+	right: 0;
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.slideshow[slideCssFile="audioSlideshow"]  .fadingOut  {
+	z-index: 10;
+}
+
+.slideshow[slideCssFile="audioSlideshow"]  .fadingIn {
+	z-index: 20;
+}
+
+.slideshow[slideCssFile="audioSlideshow"]  .controls {
+	width: 550px;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+.slideshow[slideCssFile="audioSlideshow"] .rewindSlide,
+.slideshow[slideCssFile="audioSlideshow"] .pauseSlides,
+.slideshow[slideCssFile="audioSlideshow"] .playSlides {
+	height: 39px;
+	cursor: pointer;
+	float:left;
+}
+
+.slideshow[slideCssFile="audioSlideshow"] .pauseSlides,
+.slideshow[slideCssFile="audioSlideshow"] .playSlides {
+	width: 100px;
+	background-repeat: no-repeat;
+	float: right;
+	cursor: pointer;
+}
+
+.slideshow[slideCssFile="audioSlideshow"] .controls .pauseSlides {
+	background-image: url('../images/pause.png');
+}
+
+.slideshow[slideCssFile="audioSlideshow"] .controls .playSlides {
+	background-image: url('../images/play.png');
+}
+.slideshow[slideCssFile="audioSlideshow"] .pageNumber {	
+	position: absolute;
+	width: 140px;
+	padding-top: 20px;
+	bottom: 0;
+	left: 50%;
+	font-size: 14px;
+	opacity: 0.6;
+	transform: translate(-50%, 100%);
+	text-align: center;
+}

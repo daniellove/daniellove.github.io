@@ -1,0 +1,193 @@
+.dragAndDrop[ddCssFile="scatter7A"] {
+	position: relative;
+	width: 730px;
+	margin-bottom: 33px;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dragContainer,
+.dragAndDrop[ddCssFile="scatter7A"] .backgroundBox,
+.dragAndDrop[ddCssFile="scatter7A"] .dropContainer {
+	position: relative;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dragContainer,
+.dragAndDrop[ddCssFile="scatter7A"] .backgroundBox,
+.dragAndDrop[ddCssFile="scatter7A"] .dropContainer,
+.dragAndDrop[ddCssFile="scatter7A"] .ddReset,
+.dragAndDrop[ddCssFile="scatter7A"] .ddUndo,
+.dragAndDrop[ddCssFile="scatter7A"] .ddCheck {
+	float: left;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .backgroundBox img {
+	width: 420px;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dropContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dragContainer {
+	width: 300px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox,
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox {
+	position: relative;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox {
+	background-color: rgba(0, 0, 0, 0.45);
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox:nth-child(1),
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox:nth-child(2),
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox:nth-child(3),
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox:nth-child(4),
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox:nth-child(5),
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox:nth-child(6) {
+	margin-bottom: 30px;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox p {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	text-align: center;
+	margin: 3px 0 0 0!important;
+	line-height: 22px;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dragCaption {
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	padding: 0 5px;
+	color: #FFF;
+	border-radius: 2px;
+	z-index: 999;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dragBox img {
+	width: 100%;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox p {
+	position: absolute;
+	width: 160px;
+	font-size: 1em;
+	margin: 0;
+	padding: 0 10px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	opacity: 0.6;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox p.right {
+	left: 100%;
+	text-align: left;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox p.left {
+	right: 100%;
+	text-align: right;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .hoverClass {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .ui-draggable-dragging {
+	box-shadow: 2px 2px 10px #BBB;
+	z-index: 999;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .outcome {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	width: 15px;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .ddReset,
+.dragAndDrop[ddCssFile="scatter7A"] .ddUndo,
+.dragAndDrop[ddCssFile="scatter7A"] .ddCheck {
+	margin: 10px;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .ddUndo,
+.dragAndDrop[ddCssFile="scatter7A"] .ddCheck {
+	margin-left: 0;
+}
+
+.dragAndDrop[ddCssFile="scatter7A"] .hidden {
+	display: none;
+}
+
+/* dropBox styles */
+
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="1"] {
+	top: 15px;
+	left: 240px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="2"] {
+	top: 90px;
+	left: 220px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="3"] {
+	top: 160px;
+	left: 216px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="4"] {
+	top: 192px;
+	left: 110px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="5"] {
+	top: 210px;
+	left: 128px;;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="6"] {
+	top: 280px;
+	left: 35px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="7"] {
+	top: 270px;
+	left: -80px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="8"] {
+	top: 320px;
+	left: -180px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="9"] {
+	top: 520px;
+	left: -340px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="10"] {
+	top: 560px;
+	left: -420px;
+}
+.dragAndDrop[ddCssFile="scatter7A"] .dropBox[option="11"] {
+	top: 385px;
+	left: -300px;
+}
+

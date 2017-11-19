@@ -1,0 +1,205 @@
+.slideshow[slideCssFile="standard"] { 
+    position: relative;   
+	margin:  0 0 33px 33px;
+    width: 620px;
+    height: 440px;
+    background-color: #FFF;
+    box-shadow: 3px 3px 10px #B5B5B5;
+    float: left;
+}
+
+.slideshow[slideCssFile="standard"] > .slide { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	margin: 0 2px 2px 0;
+	padding: 20px;
+}
+
+.slideshow[slideCssFile="standard"] > .slide ul {
+	margin: 10px 0;
+}
+
+.slideshow[slideCssFile="standard"] > .slide li {
+	margin-left: 20px;
+}
+
+.slideshow[slideCssFile="standard"] > .slide p,
+.slideshow[slideCssFile="standard"] > .slide li {
+	line-height: 25px;
+	font-size: 12px;
+}
+
+.slideshow[slideCssFile="standard"] > .slide img {
+	position: absolute;
+	top: 0px;
+	right: 40px;
+}
+
+.slideshow[slideCssFile="standard"] .slideHead {
+	padding: 15px 0;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	font-family: Georgia;
+	font-weight: bold;
+}
+
+.slideshow[slideCssFile="standard"] .slideText {
+	padding: 0 30px 10px 30px;
+	line-height: 1.4em;
+}
+.slideshow[slideCssFile="standard"] strong {
+	color: #0098bc;
+}
+
+.slideshow[slideCssFile="standard"] .slideRef {
+	position: absolute;
+    width: 100%;
+	bottom: 10px;
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
+	opacity: 0.6;
+}
+
+.slideshow[slideCssFile="standard"] .navLeft,
+.slideshow[slideCssFile="standard"] .navRight {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+}
+
+.slideshow[slideCssFile="standard"] .navLeft {
+	left: 0;
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.slideshow[slideCssFile="standard"] .navRight {
+	right: 0;
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.slideshow[slideCssFile="standard"] .navLeft span,
+.slideshow[slideCssFile="standard"] .navRight span {
+	display: block;
+	color: #FFF;
+	font-size: 40px;
+	position: absolute;
+	top: 43%;
+}
+
+.slideshow[slideCssFile="standard"] .navLeft span {
+	left: 47%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.slideshow[slideCssFile="standard"] .navRight span {
+	right: 47%;
+	-webkit-transform: translate(50%, -50%);
+	-moz-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	-o-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+}
+
+.slideshow[slideCssFile="standard"]  .fadingOut  {
+	z-index: 10;
+}
+
+.slideshow[slideCssFile="standard"]  .fadingIn {
+	z-index: 20;
+}
+
+.smBubble,
+.smBubble2  {
+	position: absolute;
+	top: 15px;
+	width: 120px;
+	height: 70px;
+	padding: 0px;
+	background: #5eaae6;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.smBubble:nth-child(1) {
+	left: 22px;
+}
+
+.smBubble:nth-child(2) {
+	left: 260px;
+}
+
+.smBubble2 {
+	top: 55px;
+	left: 270px;
+}
+
+.smBubble p,
+.smBubble2 p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+}
+
+.smBubble:after,
+.smBubble2:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 15px 0;
+	border-color: #5eaae6 transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.smBubble2:after {
+	bottom: 8px;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent #5eaae6;
+	left: -6px;
+}
+.smBubble p:nth-child(2),
+.smBubble2 p:nth-child(2) {
+	display: none;
+}
+.slideshow[slideCssFile="audioSlideshow"] .pageNumber {	
+	position: absolute;
+	width: 140px;
+	padding-top: 20px;
+	bottom: 0;
+	left: 50%;
+	font-size: 14px;
+	opacity: 0.6;
+	transform: translate(-50%, 100%);
+	text-align: center;
+}

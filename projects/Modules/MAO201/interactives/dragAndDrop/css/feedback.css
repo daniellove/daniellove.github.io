@@ -1,0 +1,98 @@
+.dragAndDrop[ddCssFile="feedback"] {
+	position: relative;
+	margin-bottom: 33px;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 365px;
+	padding: 10px;
+	border-radius: 10px;
+	vertical-align: top;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .dropContainer {
+	margin-top: 6px
+}
+
+.dragAndDrop[ddCssFile="feedback"] .feedback {
+	display: none;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .dragBox,
+.dragAndDrop[ddCssFile="feedback"] .dropBox,
+.dragAndDrop[ddCssFile="feedback"] .feedback div {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: #FFF;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .dropBox,
+.dragAndDrop[ddCssFile="feedback"] .feedback div {
+	margin: 0 -3px -4px 0;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .dragBox {
+	cursor: pointer;
+	z-index: 10;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .dragBox:not(:last-child) {
+	margin-right: 1px;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .dropBox {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dragAndDrop[ddCssFile="feedback"] .feedback div {
+	background-color: #acfef2;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .dragBox p,
+.dragAndDrop[ddCssFile="feedback"] .feedback p {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+	margin: 0 0 0 0!important;
+	line-height: 22px;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .hoverClass {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dragAndDrop[ddCssFile="feedback"] .ui-draggable-dragging {
+	box-shadow: 2px 2px 10px #BBB;
+	z-index: 999;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .outcome {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	width: 27px;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .ddFeedback,
+.dragAndDrop[ddCssFile="feedback"] .ddReset,
+.dragAndDrop[ddCssFile="feedback"] .ddCheck {
+	position: absolute;
+	bottom: 12px;
+	right: 10px;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .ddFeedback {
+	right: 100px;
+}
+
+.dragAndDrop[ddCssFile="feedback"] .hidden {
+	display: none;
+}

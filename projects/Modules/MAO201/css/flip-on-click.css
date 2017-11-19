@@ -1,0 +1,53 @@
+.click-flip {
+	cursor: pointer;
+	width: 240px;
+	height: 220px;
+	float: left;
+} 
+
+.click-flip .front p,
+.click-flip .back p {
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.click-flip .back p {
+	text-align: center;
+	color: #FFF;
+}
+
+.click-flip .front img {
+    width: 100%;
+}
+
+.click-flip > div {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.65s ease-in;
+	-moz-transition: -webkit-transform 0.65s ease-in;
+	width: 240px;
+	height: inherit;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.click-flip .back {
+	background-color: #3b6076;
+}
+
+.click-flip .front {
+	background-color: #D1E2EC;
+}
+
+.click-flip .back,
+.click-flip.toss .front {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}  
+.click-flip.toss .back {   
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}

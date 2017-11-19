@@ -1,0 +1,617 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="google" value="notranslate">
+
+	<title>3.0 | Lesson 3.0</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/images.css">
+	<link rel="stylesheet" href="css/images.css">
+	
+	<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+	<script id="masterJs" type="text/javascript" src="https://tekura.desire2learn.com/shared/masterTemplates/triple000_script.js"></script>
+
+	<!-- Custom files -->
+
+	<link rel="stylesheet" href="css/audioTable.css">
+	<script type="text/javascript" src="js/audioTable.js"></script>
+	<script type="text/javascript" src="interactives/typeTheAnswer/js/tta.js"></script>
+
+	<link rel="stylesheet" href="css/flip-on-click.css">
+	<script type="text/javascript" src="js/flip-on-click.js"></script>
+
+	<script type="text/javascript" src="interactives/dragAndDrop/js/dd.js"></script>
+
+	<style>
+		.click-flip {
+			height: 240px;
+		}
+
+		.click-flip > div {
+			border-radius: 10px;
+		}
+
+		.click-flip .back p {
+			text-align: left;
+			margin-left: 13px;
+			color: rgb(200, 200, 200);
+		}
+		.click-flip .back p b {
+			color: #FFF;
+		}
+		textarea {
+			resize: vertical;
+			font-family: inherit;
+		}
+	</style>
+
+	<script>
+		$(function() {
+			$('.typeTheAnswer[ttaCssFile="modelAnswer"]').find('.ttaShow').on('click', function() {
+				var container = $(this).closest('.typeTheAnswer')
+				container.find('.suggestion').addClass('showing')
+				$(this).addClass('ttaHidden')
+				container.find('.ttaHide').removeClass('ttaHidden')
+			})
+			$('.typeTheAnswer[ttaCssFile="modelAnswer"]').find('.ttaHide').on('click', function() {
+				var container = $(this).closest('.typeTheAnswer')
+				container.find('.suggestion').removeClass('showing')
+				$(this).addClass('ttaHidden')
+				container.find('.ttaShow').removeClass('ttaHidden')
+			})
+			$('.typeTheAnswer[ttaCssFile="modelAnswer"]').find('.ttaReset').on('click', function() {
+				var container = $(this).closest('.typeTheAnswer')
+				container.find('.ttaShow').addClass('ttaHidden')
+				container.find('.ttaHide').addClass('ttaHidden')
+				container.find('.suggestion').removeClass('showing')
+			})
+
+			$('.typeTheAnswer[ttaCssFile="modelAnswer"]').find('.ttaInputBox').on('keyup', function() {
+				var container = $(this).closest('.typeTheAnswer')
+				var questions = container.find('.ttaInputBox').length
+				var answered = 0
+				container.find('.ttaInputBox').each(function() {
+					var value = $(this).val().split(' ')
+					if (value.length>1&value[1]!='') {
+						answered++
+					}
+				})
+				if (answered===questions) {
+					container.find('.ttaShow').removeClass('ttaHidden')
+				} else {
+					container.find('.ttaShow').addClass('ttaHidden')
+				}
+			})
+		})
+	</script>
+	
+
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="heading-section">
+				<p id="course-code">3.0</p><h1>WHAT KIND OF DAY IS IT?</h1>
+				<div class="clearDiv"></div>
+			</div>
+			<div id="menu">
+				<ul id="dropdown-menu">
+					<li class="menu-item menu-item-border" id="menu1">WHAT <img class="menu-arrow" src="images/menu_arrow.png" /></li>
+					<li class="menu-item menu-item-border" id="menu2">WHY <img class="menu-arrow" src="images/menu_arrow.png" /></li>
+					<li class="menu-item last-menu-item-border" id="menu3">HOW <img class="menu-arrow" src="images/menu_arrow.png" /></li>
+				</ul>
+				<div class="submenu" id="menu1-submenu">
+					<ul id="menu1-submenu-ul">
+						In this lesson you will use familiar words and short phrases about weather.
+					</ul>
+				</div>
+				<div class="submenu" id="menu2-submenu">
+					<ul id="menu2-submenu-ul">
+						This lesson will build on your knowledge about weather.
+					</ul>
+				</div>
+				<div class="submenu" id="menu3-submenu">
+					<ul id="menu3-submenu-ul">
+						This lesson will take approximately one hour to complete.
+						<br>You will be assessed by how well you answer questions about weather.
+					</ul>
+				</div>
+			</div><!-- eo#menu -->
+		</div><!-- eo#header -->
+		<div class="content">
+
+			<div class="languageIcons">
+				<div class="toolTipContainer">
+					<a class="toolTipTrigger" href="Javascript:popOutWindow('popout/MAO201 - 3.html','lesson 3');"><img src="images/word-list.png"></a>
+					<p class="toolTip" style="width: 60px;">Word List</p>
+				</div>
+			</div>
+
+			<h3>introduction</h3>
+
+			<p class="content-text">
+				In the last lesson we looked at ways of describing the weather and what the weather is doing. In this lesson we look at another sentence structure to describe what kind of day it is.
+			</p>
+
+			<h2>
+				<img src="images/page-circle.png" class="page-marker">
+				WHAT KIND OF DAY IS IT?
+			</h2>
+
+			<p class="content-text">
+				Click on the words that are underlined for further detail.  
+			</p>
+
+			<p class="content-text smMargin">
+				<b>Sentence Structure</b>
+			</p>
+
+			<div class="rel">
+				<div class="hiddenInfo" showOn="tuuaahua">
+					<p>Adjective &ndash; describing word.</p>
+				</div>
+			</div>
+
+			<table class="audioTable" folder="vocab/imageTable">
+				<tr>
+					<td class="noClick">
+						He
+					</td>
+					<td class="noClick">
+						rangi
+					</td>
+					<td class="infoTrigger noClick" showThis="tuuaahua">
+						<span><i style="font-size: 1em;">+ t&umacr;&amacr;hua.</i></span>
+					</td>
+				</tr>
+			</table>
+			<p class="content-text smMargin">
+				<b>An example</b>
+			</p>
+
+			<div class="rel">
+				<div class="hiddenInfo" showOn="fineDay">
+					<p>A fine day.</p>
+				</div>
+			</div>
+
+			<table class="audioTable infoTrigger" showThis="fineDay" folder="vocab/imageTable" style="border-bottom: none;background-color: transparent;">
+				<tr>
+					<td class="noClick">
+						He
+					</td>
+					<td class="noClick">
+						rangi
+					</td>
+					<td class="noClick">
+						paki.
+					</td>
+				</tr>
+				<tr>
+					<th colspan="3"><img style="width: 100%" src="images/interactives/fine day.png"></th>
+				</tr>
+			</table>
+
+			<div class="activity-section">
+				<div class="activity-number-container">
+					<div class="activity-number">
+						<p>3A</p>
+					</div>
+				</div>
+				<h3>WHAT KIND OF DAY IS IT?</h3>
+				<p class="content-text bullet-intro">
+					In the first column are some phrases about the weather, but they are not in the correct order.
+				</p>
+				<ol class="bullet-list">
+					<li>In the second column, type the phrase in the correct order.</li>
+					<li>In the third column, type the missing English word.</li>
+				</ol>
+				<p class="content-text">
+					NOTE: Don&rsquo;t forget capital letters and full stops. Words containing macrons can be copied and pasted.
+				</p>
+
+				<div class="typeTheAnswer" ttaCssFile="table">
+					<table>
+						<tr>
+							<td>he rangi paki</td>
+							<td>He rangi paki.</td>
+							<td>A fine day.</td>
+						</tr>
+						<tr>
+							<td>&amacr;taahua rangi he</td>
+							<td class="inputTd"><input class="ttaInputBox" type="text" answer="He rangi &amacr;taahua." placeholder="Type here"></td>
+							<td>A beautiful day.</td>
+						</tr>
+						<tr>
+							<td>k&omacr;ruki rangi he</td>
+							<td><input class="ttaInputBox" type="text" answer="He rangi k&omacr;ruki." placeholder="Type here"></td>
+							<td>An overcast day.</td>
+						</tr>
+						<tr>
+							<td>rangi he mahana</td>
+							<td class="inputTd"><input class="ttaInputBox" type="text" answer="He rangi mahana." placeholder="Type here"></td>
+							<td>
+								<span style="margin-left: 35px;">A</span>
+								<input style="width: 80px;" class="ttaInputBox" type="text" answer="warm" placeholder="Type here">
+								<span>day.</span>
+							</td>
+						</tr>
+						<tr>
+							<td>he m&amacr;k&umacr; rangi</td>
+							<td class="inputTd"><input class="ttaInputBox" type="text" answer="He rangi m&amacr;k&umacr;." placeholder="Type here"></td>
+							<td>
+								<span style="margin-left: 35px;">A</span>
+								<input style="width: 80px;" class="ttaInputBox" type="text" answer="wet" placeholder="Type here">
+								<span>day.</span>
+							</td>
+						</tr>
+						<tr>
+							<td>he makariri rangi</td>
+							<td class="inputTd"><input class="ttaInputBox" type="text" answer="He rangi makariri." placeholder="Type here"></td>
+							<td>
+								<span style="margin-left: 35px;">A</span>
+								<input style="width: 80px;" class="ttaInputBox" type="text" answer="cold" placeholder="Type here">
+								<span>day.</span>
+							</td>
+						</tr>
+					</table>
+					
+					<div class="clearDiv"></div>
+					<div class="language-button ttaReset">Reset</div>
+					<div class="ttaHidden language-button ttaCheck">Check answer</div>
+				</div>
+			</div>
+
+			<div class="rel">
+				<img src="images/icons/sound.png" class="page-marker">
+				<p class="newVocab">New vocabulary</p>
+			</div>
+
+			<p class="content-text bullet-intro">
+				Here are some more nouns that will help you when talking about the weather. 
+			</p>
+			<table class="audioTable" folder="vocab/generic">
+				<tr>
+					<td>hukapapa</td>
+					<th>frost</th>
+				</tr>
+				<tr>
+					<td>kapua</td>
+					<th>cloud</th>
+				</tr>
+				<tr>
+					<td audioName="koouaua">k&omacr;uaua</td>
+					<th>shower (of rain)</th>
+				</tr>
+				<tr>
+					<td>kohu</td>
+					<th>fog</th>
+				</tr>
+			</table>
+
+			<p class="content-text">
+				We add <b>&lsquo;he&rsquo;</b> in front to mean &lsquo;a, an, or some&rsquo;.
+				<br><br>Example:
+				<br><b>He hukapapa.</b>
+				<br><i>A/some frost.</i>
+			</p>
+
+			<h2>
+				<img src="images/page-circle.png" class="page-marker">
+				IT&rsquo;S ALL ABOUT THE WEATHER
+			</h2>
+
+			<p class="content-text bullet-intro">
+				You have now learned three different sentence structures to use to talk about the weather. You can: 
+			</p>
+			<ul class="bullet-list">
+				<li>describe the weather in the present tense</li>
+				<li>say what the weather is doing in the present tense</li>
+				<li>talk about what kind of day it is.</li>
+			</ul>
+
+			<p class="content-text">
+				You also learned a few nouns to help when talking about the weather.
+			</p>
+
+			<p class="content-text">
+				Click on the images to review these sentence structures.
+			</p>
+
+			<div class="click-flip margin">
+				<div class="back">
+					<br><br><br>
+					<p><b>Kei te</b> + <i>t&umacr;&amacr;hua</i>.</p>
+					<p>It&rsquo;s + <i>adjective</i>.</p>
+					<p><b>For example:</b></p>
+					<p><b>Kei te wera.</b></p>			
+					<p>It&rsquo;s hot.</p>
+				</div>
+				<div class="front">
+					<img src="images/interactives/hotDay.png">
+				</div>
+			</div>
+			<div class="click-flip margin">
+				<div class="back">
+					<br><br><br>
+						<p><b>Kei te</b> + <i>t&umacr;mahi</i> + <b>te</b> + <i>t&umacr;ingoa</i>.</p>	
+						<p>The + <i>noun</i> + is + <i>verb</i>.</p>	
+						<p><b>For example:</b></p>	
+						<p><b>Kei te whiti te r&amacr;.</b>	</p>		
+						<p>The Sun is shining.</p>	
+				</div>
+				<div class="front">
+					<img src="images/interactives/shineDay.png">
+				</div>
+			</div>
+
+			<div class="clearDiv"></div>
+
+			<div class="click-flip margin">
+				<div class="back">
+					<br><br><br>
+						<p><b>He rangi</b> + <i>t&umacr;&amacr;hua</i>.</p>	
+						<p>A/an + <i>adjective</i> + day.</p>	
+						<p><b>For example:</b></p>	
+						<p><b>He rangi paki.</b></p>		
+						<p>A fine day.</p>	
+				</div>
+				<div class="front">
+					<img src="images/interactives/fineDay.png">
+				</div>
+			</div>
+			<div class="click-flip margin">
+				<div class="back">
+					<br>
+						<p>You also learned a few nouns to help you when talking about the weather.</p>	
+						<p><b>He</b> + <i>t&umacr;ingoa</i>.</p>		
+						<p>A/an/some + <i>noun</i></p>	
+						<p><b>For example:</b></p>	
+						<p><b>He hukapapa.</b></p>			
+						<p>A/some frost.</p>	
+				</div>
+				<div class="front">
+					<img src="images/interactives/frostDay.png">
+				</div>
+			</div>
+
+
+			<div class="clearDiv"></div>
+
+			<h3>WRITING ABOUT THE WEATHER</h3>
+
+
+			<p class="content-text">
+				Now it&rsquo;s time to put it altogether and use the sentence structures and the vocabulary you&rsquo;ve learned to write about the following pictures.
+			</p>
+
+			<div class="activity-section">
+				<div class="activity-number-container">
+					<div class="activity-number">
+						<p>3B</p>
+					</div>
+				</div>
+				<h3>WRITING ABOUT THE WEATHER</h3>
+				<p class="content-text">
+					Complete this activity by writing as much as you can about each picture using the words and phrases you have learned. 
+				</p>
+				<p class="content-text">
+					NOTE: Don’t forget capital letters, macrons and full stops.
+				</p>
+				<div class="typeTheAnswer" ttaCssFile="modelAnswer">
+					<div class="ttaBlock">
+						<div class="ttaImage">
+							<img src="images/interactives/sunny.png">
+							<div class="suggestion">
+								<br><br>
+								<p>Kei te wera.</p>
+								<p>Kei te mahana.</p>
+								<p>Kei te whiti te r&amacr;.</p>
+								<p>He rangi wera.</p>
+								<p>He rangi mahana.</p>
+								<p>He rangi paki.</p>
+								<p style="margin-left: 75px;">He rangi &amacr;taahua.</p>
+							</div>
+						</div>
+						<textarea rows="4" class="ttaInputBox" type="text" placeholder="Type here"></textarea>
+						<div class="accentBlock">
+							<div><p>&amacr;</p></div>
+							<div><p>&emacr;</p></div>
+							<div><p>&imacr;</p></div>
+							<div><p>&omacr;</p></div>
+							<div><p>&umacr;</p></div>
+						</div>
+					</div>
+					<div class="ttaBlock">
+						<div class="ttaImage">
+							<img src="images/interactives/rainy.png">
+							<div class="suggestion">
+								<br><br><br><br>
+								<p>Kei te m&amacr;k&umacr;.</p>
+								<p>Kei te heke te ua.</p>
+								<p>Kei te ua.</p>
+								<p>He k&omacr;uaua.</p>
+							</div>
+						</div>
+						<textarea rows="4" class="ttaInputBox" type="text" placeholder="Type here"></textarea>
+						<div class="accentBlock">
+							<div><p>&amacr;</p></div>
+							<div><p>&emacr;</p></div>
+							<div><p>&imacr;</p></div>
+							<div><p>&omacr;</p></div>
+							<div><p>&umacr;</p></div>
+						</div>
+					</div>
+					<div class="clearDiv"></div>
+					<div class="ttaBlock">
+						<div class="ttaImage">
+							<img src="images/interactives/windy.png">
+							<div class="suggestion">
+								<br><br><br>
+								<p>Kei te mahana.</p>
+								<p>Kei te whiti te r&amacr;.</p>
+								<p>Kei te pupuhi te hau.</p>
+								<p>He rangi mahana.</p>
+								<p>He rangi k&omacr;ruki.</p>
+								<p>He kapua.</p>
+							</div>
+						</div>
+						<textarea rows="4" class="ttaInputBox" type="text" placeholder="Type here"></textarea>
+						<div class="accentBlock">
+							<div><p>&amacr;</p></div>
+							<div><p>&emacr;</p></div>
+							<div><p>&imacr;</p></div>
+							<div><p>&omacr;</p></div>
+							<div><p>&umacr;</p></div>
+						</div>
+					</div>					
+					
+					<div class="clearDiv"></div>
+					<div class="language-button ttaReset">Reset</div>
+					<div class="ttaHidden language-button ttaShow">Show model answers</div>
+					<div class="ttaHidden language-button ttaHide">Hide model answers</div>
+				</div>
+
+			</div>
+
+			<div class="activity-section">
+				<div class="activity-number-container">
+					<div class="activity-number">
+						<p>3C</p>
+					</div>
+				</div>
+				<h3>WEATHER REPORT</h3>
+				<p class="content-text">
+					Click on the weather broadcaster to read a report about the weather conditions around the country. Then drag the appropriate weather symbol from the right to the correct location on the map.
+				</p>
+				<div class="dragAndDrop" ddCssFile="scatter3C">
+					<div class="backgroundBox">
+						<img src="images/interactives/nz.png" alt="">
+					</div>
+					<div class="dropContainer">
+						<div class="dropBox" option="1">
+							<p class="left">Kaitaia</p>
+						</div>
+						<div class="dropBox" option="2">
+							<p class="left">Ng&amacr;motu</p>
+						</div>
+						<div class="dropBox" option="3">
+							<p class="right">Te Whakaoriori</p>
+						</div>
+						<div class="dropBox" option="4">
+							<p class="right">Te Whanganui-a-Tara</p>
+						</div>
+						<div class="dropBox" option="5">
+							<p class="left">Whakat&umacr;</p>
+						</div>
+						<div class="dropBox" option="6">
+							<p class="right">Wairau</p>
+						</div>
+						<div class="dropBox" option="7">
+							<p class="left">Kawatiri</p>
+						</div>
+						<div class="dropBox" option="8">
+							<p class="right">&Omacr;tautahi</p>
+						</div>
+						<div class="dropBox" option="9">
+							<p class="right">&Omacr;tepoti</p>
+						</div>
+						<div class="dropBox" option="10">
+							<p class="right">Waih&omacr;pai</p>
+						</div>
+						<div class="dropBox" option="11">
+							<p class="left">Kirikiriroa</p>
+						</div>
+					</div>
+
+					<div class="click-flip" style="margin-left: 15px;width:360px; margin-top: -10px;">
+						<div class="back" style="width:360px; height:270px;">
+							<p style="color:#FFF; opacity: 0.9; padding: 5px 10px; margin: 0;">Ki Waih&omacr;pai he rangi makariri.
+							<br>Kei te heke te hukarere ki &Omacr;tepoti.
+							<br>Ki &Omacr;tautahi he k&omacr;uaua.
+							<br>Ki Kawatiri he rangi k&omacr;ruki, he rangi mahana.
+							<br>He kapua ki Wairau.
+							<br>Kei te whiti te r&amacr; ki Whakat&umacr;.
+							<br>Kei te pupuhi te hau ki Te Whanganui-a-Tara.
+							<br>Kei te heke te ua ki Te Whakaoriori.
+							<br>Ki Ng&amacr;motu, he hukapapa.
+							<br>He kohu ki Kirikiriroa.
+							<br>He rangi wera ki Kaitaia.</p>
+						</div>
+						<div class="front" style="width:360px;">
+							<img style="border-radius: 10px;" src="images/interactives/weatherBroadcaster.png">
+						</div>
+					</div>
+
+					<p style="float: left;width: 360px;margin-left: 15px;color: rgba(0, 0, 0, 0.8);)"></p>
+
+					<div class="dragContainer">
+						<div class="dragBox noImage" option="1">
+							<img src="images/interactives/ddHot.png">
+							<p class="dragCaption">hot</p>
+						</div>
+						<div class="dragBox noImage" option="2">
+							<img src="images/interactives/ddFrost.png">
+							<p class="dragCaption">frost</p>
+						</div>
+						<div class="dragBox noImage" option="3">
+							<img src="images/interactives/ddRain.png">
+							<p class="dragCaption">rain</p>
+						</div>
+						<div class="dragBox noImage" option="4">
+							<img src="images/interactives/ddWind.png">
+							<p class="dragCaption">wind</p>
+						</div>
+						<div class="dragBox noImage" option="5">
+							<img src="images/interactives/ddSun.png">
+							<p class="dragCaption">Sun</p>
+						</div>
+						<div class="dragBox noImage" option="6">
+							<img src="images/interactives/ddCloud.png">
+							<p class="dragCaption">clouds</p>
+						</div>
+						<div class="dragBox noImage" option="7">
+							<img src="images/interactives/ddOver.png">
+							<p class="dragCaption">overcast</p>
+						</div>
+						<div class="dragBox noImage" option="8">
+							<img src="images/interactives/ddShower.png">
+							<p class="dragCaption">showers</p>
+						</div>
+						<div class="dragBox noImage" option="9">
+							<img src="images/interactives/ddSnow.png">
+							<p class="dragCaption">snow</p>
+						</div>
+						<div class="dragBox noImage" option="10">
+							<img src="images/interactives/ddCold.png">
+							<p class="dragCaption">cold</p>
+						</div>
+						<div class="dragBox noImage" option="11">
+							<img src="images/interactives/ddFog.png">
+							<p class="dragCaption">fog</p>
+						</div>
+					</div>
+					<div style="float: left;width: 190px;">
+						<a class="language-button ddReset">Reset</a>
+						<a class="language-button hidden ddUndo">Undo</a>
+						<a class="language-button hidden ddCheck" style="margin:0 10px;width: 126px;">Check answers</a>
+					</div>
+					<div class="clearDiv"></div>
+				</div>
+			</div>
+
+
+
+
+
+		</div><!-- eo#content -->
+		<div id="footer">
+			<p>Neat alright! <b>Ka wani k&emacr;!</b></p>
+			<a id="back-link" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=content&amp;rcode=TCS_Dev-26682" target="_self">&#60; Go back</a>
+			<a id="forward-link" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=content&amp;rcode=TCS_Dev-26684" target="_self">Go to lesson 4 &#62;</a>	
+		</div><!-- eo#footer -->
+	</div><!-- eo#container -->
+</body>
+</html>

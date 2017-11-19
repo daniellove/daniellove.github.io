@@ -1,0 +1,162 @@
+.dragAndDrop[ddCssFile="mixedContent"] {
+	position: relative;
+	margin-bottom: 33px;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dropContainer,
+.dragAndDrop[ddCssFile="mixedContent"] .dragContainer,
+.dragAndDrop[ddCssFile="mixedContent"] .dropBox,
+.dragAndDrop[ddCssFile="mixedContent"] .dragBox,
+.dragAndDrop[ddCssFile="mixedContent"] .ddReset,
+.dragAndDrop[ddCssFile="mixedContent"] .ddUndo,
+.dragAndDrop[ddCssFile="mixedContent"] .ddCheck {
+	float: left;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dropContainer,
+.dragAndDrop[ddCssFile="mixedContent"] .dragContainer {
+	width: 780px;
+	padding: 10px 5px 0 5px;
+	border-radius: 10px;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dropContainer {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 40px;
+}
+
+
+.dragAndDrop[ddCssFile="mixedContent"] .dragContainer {
+	margin-top: 40px;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dropBox,
+.dragAndDrop[ddCssFile="mixedContent"] .dragBox {
+	position: relative;
+	height: 120px;
+	width: 120px;
+	margin: 0 5px 10px 5px;
+	border-radius: 50%;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dropBox {
+	background-color: #FFF;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dropBox > p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	color: #b5b5b5;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dragBox {
+	cursor: pointer;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dragTitle {
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	padding-bottom: 130px;
+	position: absolute;
+	top: -40px;
+	left: -10px;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	display: none;
+	border-radius: 10px;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dragImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dragHelp {
+	color: #FFF;
+	font-size: 0.7em;
+	border-radius: 8px;
+	border: 1px solid #FFF;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	bottom: -2px;
+	left: -2px;
+	cursor: pointer;
+	display: none;
+	z-index: 30;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dragHelp > p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .dragMessage {
+	text-align: center;
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #FFF;
+	z-index: 10;
+	margin: 0;
+	line-height: 1;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .hoverClass {
+	background-color: #000;
+	opacity: 0.7;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .ui-draggable-dragging {
+	z-index: 999;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .outcome {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	width: 27px;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .ddReset,
+.dragAndDrop[ddCssFile="mixedContent"] .ddUndo,
+.dragAndDrop[ddCssFile="mixedContent"] .ddCheck {
+	margin: 10px;
+}
+
+.dragAndDrop[ddCssFile="mixedContent"] .ddUndo,
+.dragAndDrop[ddCssFile="mixedContent"] .ddCheck {
+	margin-left: 0;
+}
+
+
+.dragAndDrop[ddCssFile="mixedContent"] .hidden {
+	display: none;
+}

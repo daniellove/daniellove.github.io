@@ -1,0 +1,139 @@
+.dragAndDrop[ddCssFile="column1D"] {
+	position: relative;
+	margin-bottom: 33px;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dropContainer,
+.dragAndDrop[ddCssFile="column1D"] .column,
+.dragAndDrop[ddCssFile="column1D"] .dragContainer,
+.dragAndDrop[ddCssFile="column1D"] .dragBox,
+.dragAndDrop[ddCssFile="column1D"] .ddReset,
+.dragAndDrop[ddCssFile="column1D"] .ddUndo,
+.dragAndDrop[ddCssFile="column1D"] .ddCheck {
+	float: left;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dropContainer {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dropContainer {
+	position: relative;
+	padding: 4px 2px 0 2px;
+	border-radius: 4px;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .columnHead {
+	color: #FFF;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin-bottom: 3px;
+	display: inline-block;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dragContainer {
+	position: relative;
+	padding: 10px 5px 0 2px;
+	width: 792px;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dropBox,
+.dragAndDrop[ddCssFile="column1D"] .infoBox,
+.dragAndDrop[ddCssFile="column1D"] .dragBox {
+	position: relative;
+	background-color: #FFF;
+	height: 40px;
+	width: 260px;
+	margin-bottom: 4px;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .column,
+.dragAndDrop[ddCssFile="column1D"] .dragBox {
+	margin: 0 2px;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .infoBox p,
+.dragAndDrop[ddCssFile="column1D"] .dragBox p {
+	line-height: 1.2em;
+	font-size: 13px;
+	color: #363636;
+	padding: 2%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dragBox {
+	cursor: pointer;
+	margin-bottom: 4px;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dragBox.ui-draggable-disabled {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #FFF;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dragCaption {
+	width: 100%;
+	height: 20px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .dragCaption > p{
+	color: #FFF;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.dragAndDrop[ddCssFile="column1D"] .hoverClass {
+	background-color: #BBB;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .ui-draggable-dragging {
+	box-shadow: 2px 2px 10px #BBB;
+	z-index: 999;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .outcome {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	width: 27px;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .ddReset,
+.dragAndDrop[ddCssFile="column1D"] .ddUndo,
+.dragAndDrop[ddCssFile="column1D"] .ddCheck {
+	margin: 10px;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .ddUndo,
+.dragAndDrop[ddCssFile="column1D"] .ddCheck {
+	margin-left: 0;
+}
+
+.dragAndDrop[ddCssFile="column1D"] .hidden {
+	display: none;
+}
