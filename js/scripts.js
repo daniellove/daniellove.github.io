@@ -15,7 +15,7 @@ $(function() {
 	})
 	// if ($(window).width() < 568) {
 		$('#navItems').on(trigger, function() {
-			$('#navItems').fadeOut(100)
+			if (touchDevice()) $('#navItems').fadeOut(100)
 		})
 	// }
 })
