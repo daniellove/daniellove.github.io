@@ -35,20 +35,18 @@ $(function() {
 })
 
 $(function() {
-	if (!touchDevice()) {
-		var timeDelay = 4500
-		var timer;
-		runCarousel()
-		function runCarousel() {
-			timer = setTimeout(function() {
-				shiftRight()
-			}, timeDelay)
-		}
-		function resetTimer() {
-			clearTimeout(timer)
-			runCarousel()
-		}
-	}
+	var timeDelay = 4500
+	var timer = setInterval(function() {
+		shiftRight()
+	}, timeDelay)
+	$('#projectSlider').children().on('mouseenter', function() {
+		clearInterval(timer)
+	})
+	$('#projectSlider').children().on('mouseleave', function() {
+		timer = setInterval(function() {
+			shiftRight()
+		}, timeDelay)
+	})
 	$(document).on(trigger, '.rightThumb', shiftRight)
 	$(document).on(trigger, '.leftThumb', shiftLeft)
 
@@ -68,7 +66,6 @@ $(function() {
 		$(xfer)
 			.addClass('rightHide').removeClass('leftHide')
 			.appendTo($(xfer).parent())
-		resetTimer()
 	}
 
 	function shiftLeft() {
@@ -82,7 +79,6 @@ $(function() {
 		$(xfer)
 			.addClass('leftHide').removeClass('rightHide')
 			.prependTo($(xfer).parent())
-		resetTimer()
 	}
 	function getEle() {
 		return {

@@ -22,7 +22,7 @@ $(function() {
 function generateAccordianTab($item) {
 	$('#butttonBlock').append([
 		'<div class="accordionTab" activate="'+$item+'">',
-		'	<img src="https://tekura.desire2learn.com/shared/'+$imgFolder+'/'+$item+'.png">',
+		'	<img src="images/'+$item+'.png">',
 		'	<span>'+$item.split('_').join(' ')+'</span>',
 		'</div>'
 	].join(''))
